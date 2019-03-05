@@ -30,15 +30,19 @@ void COCOMO::setConstants(short mode){
 		case 1:
 			this->a = 3.2;
 			this->b = 1.05;
+			break;
 		case 2:
 			this->a = 3.0;
 			this->b = 1.10;
+			break;
 		case 3:
 			this->a = 2.8;
 			this->b = 1.20;
+			break;
 		default:
 			this->a = 3.2;
 			this->b = 1.05;
+			break;
 	}
 }
 
