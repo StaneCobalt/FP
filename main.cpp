@@ -33,8 +33,8 @@ int main(){
 }
 
 void FunctionPointHelper(){
-	short fComp[5];
-	int nFunc[5];
+	short fComp[5]; // function complexities
+	int nFunc[5]; // number of function types
 		std::cout << "Number of Inputs: ";
 		std::cin >> nFunc[0];
 		std::cout << "Complexity of Inputs (0-2): ";
@@ -56,7 +56,7 @@ void FunctionPointHelper(){
 		std::cout << "Complexity of Interfaces (0-2): ";
 		std::cin >> fComp[4];
 	
-	short tf[14];
+	short tf[14]; // technical factors
 		std::cout << "Influence of Data Communication (0-5): ";
 		std::cin >> tf[0];
 		std::cout << "Influence of Distributed Data Processing (0-5): ";
@@ -95,6 +95,17 @@ void FunctionPointHelper(){
 }
 
 void COCOMOHelper(){
+	short mode = 1;
+		std::cout << "Select mode\n1) organic\n2) nominal\n3) embedded\n";
+		std::cin >> mode;
 	
+	float kdsi = 1.0f;
+		std::cout << "Enter KDSI (lines of code in thousands): ";
+		std::cin >> kdsi;
+	
+	COCOMO cocomo;
+		cocomo.setConstants(mode);
+		cocomo.setKDSI(kdsi);
+		float estimate = cocomo.getEstimate();
+		std::cout << "Person-Hours = " << estimate << std::endl;
 }
-
