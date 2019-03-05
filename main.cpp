@@ -1,0 +1,69 @@
+#include "cocomo.h"
+#include "functionPoint.h"
+#include <iostream>
+
+int main(){
+	
+	short fComp[5];
+	int nFunc[5];
+		std::cout << "Number of Inputs: ";
+		std::cin >> nFunc[0];
+		std::cout << "Complexity of Inputs (0-2): ";
+		std::cin >> fComp[0];
+		std::cout << "Number of Outputs: ";
+		std::cin >> nFunc[1];
+		std::cout << "Complexity of Outputs (0-2): ";
+		std::cin >> fComp[1];
+		std::cout << "Number of Inquiries: ";
+		std::cin >> nFunc[2];
+		std::cout << "Complexity of Inquiries (0-2): ";
+		std::cin >> fComp[2];
+		std::cout << "Number of Masters: ";
+		std::cin >> nFunc[3];
+		std::cout << "Complexity of Masters (0-2): ";
+		std::cin >> fComp[3];
+		std::cout << "Number of Interfaces: ";
+		std::cin >> nFunc[4];
+		std::cout << "Complexity of Interfaces (0-2): ";
+		std::cin >> fComp[4];
+	
+	short tf[14];
+		std::cout << "Influence of Data Communication (0-5): ";
+		std::cin >> tf[0];
+		std::cout << "Influence of Distributed Data Processing (0-5): ";
+		std::cin >> tf[1];
+		std::cout << "Influence of Performance Criteria (0-5): ";
+		std::cin >> tf[2];
+		std::cout << "Influence of Heavily Utilized Hardware (0-5): ";
+		std::cin >> tf[3];
+		std::cout << "Influence of High Transaction Rates (0-5): ";
+		std::cin >> tf[4];
+		std::cout << "Influence of Online Data Entry (0-5): ";
+		std::cin >> tf[5];
+		std::cout << "Influence of End-User Proficiency (0-5): ";
+		std::cin >> tf[6];
+		std::cout << "Influence of Online Updating (0-5): ";
+		std::cin >> tf[7];
+		std::cout << "Influence of Complex Computations (0-5): ";
+		std::cin >> tf[8];
+		std::cout << "Influence of Reusability (0-5): ";
+		std::cin >> tf[9];
+		std::cout << "Influence of Ease of Installation (0-5): ";
+		std::cin >> tf[10];
+		std::cout << "Influence of Ease of Operation (0-5): ";
+		std::cin >> tf[11];
+		std::cout << "Influence of Portability (0-5): ";
+		std::cin >> tf[12];
+		std::cout << "Influence of Maintainability (0-5): ";
+		std::cin >> tf[13];
+	
+	FunctionPoint FP;
+		FP.setComplexities(fComp[0],fComp[1],fComp[2],fComp[3],fComp[4]);
+		FP.setComponents(nFunc[0], nFunc[1], nFunc[2], nFunc[3], nFunc[4]);
+		FP.setTechnicalFactors(tf[0],tf[1],tf[2],tf[3],tf[4],tf[5],tf[6],tf[7],tf[8],tf[9],tf[10],tf[11],tf[12],tf[13]);
+		float estimate = FP.getEstimate();
+		std::cout << "Function Points = " << estimate << std::endl;
+		
+	system("pause");
+	return 0;
+}
