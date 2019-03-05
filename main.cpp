@@ -2,8 +2,37 @@
 #include "functionPoint.h"
 #include <iostream>
 
+void FunctionPointHelper();
+void COCOMOHelper();
+
 int main(){
 	
+	short choice = 0;
+	bool flagged = true;
+	
+	while(flagged){
+		std::cout << "What would you like to estimate?\n1) Function Points\n2) Intermediate COCOMO\n";
+		std::cin >> choice;
+		switch(choice){
+			case 1:
+				FunctionPointHelper();
+				flagged = false;
+				break;
+			case 2:
+				COCOMOHelper();
+				flagged = false;
+				break;
+			default:
+				std::cout << "Invalid option.\n";
+				break;
+		}
+	}
+	
+	system("pause");
+	return 0;
+}
+
+void FunctionPointHelper(){
 	short fComp[5];
 	int nFunc[5];
 		std::cout << "Number of Inputs: ";
@@ -63,7 +92,9 @@ int main(){
 		FP.setTechnicalFactors(tf[0],tf[1],tf[2],tf[3],tf[4],tf[5],tf[6],tf[7],tf[8],tf[9],tf[10],tf[11],tf[12],tf[13]);
 		float estimate = FP.getEstimate();
 		std::cout << "Function Points = " << estimate << std::endl;
-		
-	system("pause");
-	return 0;
 }
+
+void COCOMOHelper(){
+	
+}
+
