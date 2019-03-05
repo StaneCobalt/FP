@@ -1,5 +1,5 @@
-#include "cocomo.h"
-#include "functionPoint.h"
+#include "../include/cocomo.h"
+#include "../include/functionPoint.h"
 #include <iostream>
 
 void FunctionPointHelper();

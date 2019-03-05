@@ -1,30 +1,14 @@
-#ifndef COCOMO_H
-#define COCOMO_H
-
+#include "../include/cocomo.h"
 #include <math.h>
 
-class COCOMO {
-	private:
-		float a;
-		float b;
-		float kdsi;
-
-	public:
-		COCOMO() = default;
-		// Intermediate COCOMO calculator
-		float getEstimate();
-		// set a and b, 1 = organic, 2 = nominal, 3 = embedded
-		void setConstants(short mode);
-		// set estimated thousand lines of code
-		void setKDSI(float kdsi);
-};
-
+// Intermediate COCOMO calculator
 float COCOMO::getEstimate(){
 	float result = a * (pow(kdsi,b));
 	
 	return result;
 }
 
+// set a and b, 1 = organic, 2 = nominal, 3 = embedded
 void COCOMO::setConstants(short mode){
 	switch(mode){
 		case 1:
@@ -46,8 +30,7 @@ void COCOMO::setConstants(short mode){
 	}
 }
 
+// set estimated thousand lines of code
 void COCOMO::setKDSI(float kdsi){
 	this->kdsi = kdsi;
 }
-
-#endif
