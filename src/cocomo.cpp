@@ -13,24 +13,45 @@ float COCOMO::getEstimate(){
 }
 
 // set a and b, 1 = organic, 2 = semidetached, 3 = embedded
-void COCOMO::setConstants(short mode){
-	switch(mode){
-		case 1:
-			this->a = 3.2;
-			this->b = 1.05;
-			break;
-		case 2:
-			this->a = 3.0;
-			this->b = 1.12;
-			break;
-		case 3:
-			this->a = 2.8;
-			this->b = 1.20;
-			break;
-		default:
-			this->a = 3.2;
-			this->b = 1.05;
-			break;
+void COCOMO::setConstants(short mode, bool isIntermediate){
+	if(!isIntermediate){
+		switch(mode){
+			case 1:
+				this->a = 2.4;
+				this->b = 1.05;
+				break;
+			case 2:
+				this->a = 3.0;
+				this->b = 1.12;
+				break;
+			case 3:
+				this->a = 3.6;
+				this->b = 1.20;
+				break;
+			default:
+				this->a = 2.4;
+				this->b = 1.05;
+				break;
+		}
+	} else {
+		switch(mode){
+			case 1:
+				this->a = 3.2;
+				this->b = 1.05;
+				break;
+			case 2:
+				this->a = 3.0;
+				this->b = 1.12;
+				break;
+			case 3:
+				this->a = 2.8;
+				this->b = 1.20;
+				break;
+			default:
+				this->a = 3.2;
+				this->b = 1.05;
+				break;
+		}
 	}
 }
 

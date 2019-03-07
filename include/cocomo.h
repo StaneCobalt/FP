@@ -35,7 +35,7 @@ class COCOMO {
 		// Intermediate COCOMO calculator
 		float getEstimate();
 		// set a and b, 1 = organic, 2 = nominal, 3 = embedded
-		void setConstants(short mode);
+		void setConstants(short mode, bool isIntermediate);
 		// set estimated thousand lines of code
 		void setKDSI(float kdsi);
 		// mutator for costDrivers[]

@@ -11,7 +11,7 @@ int main(){
 	bool flagged = true;
 	
 	while(flagged){
-		std::cout << "What would you like to estimate?\n1) Function Points\n2) Intermediate COCOMO\n3) COCOMO w/ Cost Drivers";
+		std::cout << "What would you like to estimate?\n1) Function Points\n2) Basic COCOMO\n3) Intermediate COCOMO";
 		std::cin >> choice;
 		switch(choice){
 			case 1:
@@ -143,7 +143,7 @@ void COCOMOHelper(bool costDriversUsed){
 	}
 	
 	COCOMO cocomo;
-		cocomo.setConstants(mode);
+		cocomo.setConstants(mode, costDriversUsed);
 		cocomo.setKDSI(kdsi);
 		if(costDriversUsed) {
 			cocomo.setCostDrivers(costs);
