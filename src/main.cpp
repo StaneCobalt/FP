@@ -3,7 +3,7 @@
 #include <iostream>
 
 void FunctionPointHelper();
-void COCOMOHelper();
+void COCOMOHelper(bool costDriversUsed);
 
 int main(){
 	
@@ -11,7 +11,7 @@ int main(){
 	bool flagged = true;
 	
 	while(flagged){
-		std::cout << "What would you like to estimate?\n1) Function Points\n2) Intermediate COCOMO\n";
+		std::cout << "What would you like to estimate?\n1) Function Points\n2) Intermediate COCOMO\n3) COCOMO w/ Cost Drivers";
 		std::cin >> choice;
 		switch(choice){
 			case 1:
@@ -19,7 +19,11 @@ int main(){
 				flagged = false;
 				break;
 			case 2:
-				COCOMOHelper();
+				COCOMOHelper(false);
+				flagged = false;
+				break;
+			case 3:
+				COCOMOHelper(true);
 				flagged = false;
 				break;
 			default:
@@ -28,6 +32,7 @@ int main(){
 		}
 	}
 	
+	std::cout << std::endl;
 	system("pause");
 	return 0;
 }
@@ -94,7 +99,7 @@ void FunctionPointHelper(){
 		std::cout << "Function Points = " << estimate << std::endl;
 }
 
-void COCOMOHelper(){
+void COCOMOHelper(bool costDriversUsed){
 	short mode = 1;
 		std::cout << "Select mode\n1) organic\n2) nominal\n3) embedded\n";
 		std::cin >> mode;
@@ -103,9 +108,48 @@ void COCOMOHelper(){
 		std::cout << "Enter KDSI (lines of code in thousands): ";
 		std::cin >> kdsi;
 	
+	if(costDriversUsed){
+		float costs[costDriverSize];
+			std::cout << "Required software reliability (0-5): ";
+			std::cin >> costs[0];
+			std::cout << "Database size (0-5): ";
+			std::cin >> costs[1];
+			std::cout << "Product complexity (0-5): ";
+			std::cin >> costs[2];
+			std::cout << "Execution time constant (0-5): ";
+			std::cin >> costs[3];
+			std::cout << "Main storage constraint (0-5): ";
+			std::cin >> costs[4];
+			std::cout << "Virtual machine volatility (0-5): ";
+			std::cin >> costs[5];
+			std::cout << "Computer turnaround time (0-5): ";
+			std::cin >> costs[6];
+			std::cout << "Analyst capabilities (0-5): ";
+			std::cin >> costs[7];
+			std::cout << "Applications experience (0-5): ";
+			std::cin >> costs[8];
+			std::cout << "Programmer capability (0-5): ";
+			std::cin >> costs[9];
+			std::cout << "Virtual machine experience (0-5): ";
+			std::cin >> costs[10];
+			std::cout << "Programming language experience (0-5): ";
+			std::cin >> costs[11];
+			std::cout << "Use of modern programming practices (0-5): ";
+			std::cin >> costs[12];
+			std::cout << "Use of software tools (0-5): ";
+			std::cin >> costs[13];
+			std::cout << "Required development schedule (0-5): ";
+			std::cin >> costs[14];
+	}
+	
 	COCOMO cocomo;
 		cocomo.setConstants(mode);
 		cocomo.setKDSI(kdsi);
+		if(costDriversUsed) {
+			cocomo.setCostDrivers(costs);
+		} else {
+			cocomo.initCostDrivers();
+		}
 		float estimate = cocomo.getEstimate();
 		std::cout << "Person-Hours = " << estimate << std::endl;
 }
