@@ -1,0 +1,53 @@
+
+function calculateFunctionPoints(){
+    let fp = ufp() * tcf();
+    let result = document.getElementById("result");
+    result.innerHTML = fp;
+}
+
+function tcf(){
+    let factors = document.getElementsByName("factor");
+    let di = 0.0;
+    let size = factors.length;
+    for(let i = 0; i < size; i++){
+        di += factors[i];
+    }
+    return result = 0.65 + (0.01 * di);
+}
+
+function ufp(){
+    let value3Components = document.getElementsByName("three");
+    let value4Components = document.getElementsByName("four");
+    let value5Components = document.getElementsByName("five");
+    let value6Components = document.getElementsByName("six");
+    let value7Components = document.getElementsByName("seven");
+    let value10Components = document.getElementsByName("ten");
+    let value15Components = document.getElementsByName("fifteen");
+
+    let n3 = getComponentNumber(value3Components, value3Components.length);
+    let n4 = getComponentNumber(value4Components, value4Components.length);
+    let n5 = getComponentNumber(value5Components, value5Components.length);
+    let n6 = getComponentNumber(value6Components, value6Components.length);
+    let n7 = getComponentNumber(value7Components, value7Components.length);
+    let n10 = getComponentNumber(value10Components, value10Components.length);
+    let n15 = value15Components[0].value; // there's only 1
+
+    return (n3 * 3.0) + (n4 * 4.0) + (n5 * 5.0) + (n6 * 6.0) + 
+        (n7 * 7.0) + (n10 * 10.0) + (n15 * 15.0);
+}
+
+function getComponentNumber(component, size){
+    let n = 0;
+    for(let i = 0; i < size; i++){
+        n += component[i].value;
+    }
+    return n;
+}
+
+function calculateBasicCOCOMO(){
+    return 0;
+}
+
+function calculateIntermediateCOCOMO(){
+    return 0;
+}
