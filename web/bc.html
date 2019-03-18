@@ -26,7 +26,22 @@
             <div class="card">
                 <div class="card-body">
                     <div class="form-group">
+                        <h5>Project Complexity</h5>
+                        <input type="radio" name="complexity" value="organic" id="organic" checked />
+                        <label for="organic">organic</label>
                         <br/>
+                        <input type="radio" name="complexity" value="nominal" id="nominal" />
+                        <label for="nominal">nominal</label>
+                        <br/>
+                        <input type="radio" name="complexity" value="complex" id="complex" />
+                        <label for="complex">complex</label>
+                        <hr/>
+
+                        <abbr title="estimated lines of code in thousands">
+                            <h5>KDSI </h5>
+                        </abbr>
+                        <input class="form-control" type="number" placeholder="0" name="kdsi" id="kdsi" />
+                        <br/><br/>
                         <input class="btn btn-primary" type="submit" onclick="calculateBasicCOCOMO()" value="Submit" />
                     </div>
                 </div>
@@ -36,7 +51,7 @@
         <div class="container">
             <div class="card">
                 <div class="card-body">
-                        <span>Estimated Person-Months: </span>
+                    <span>Estimated Person-Months: </span>
                     <span id="result"></span>
                 </div>
             </div>

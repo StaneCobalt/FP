@@ -45,9 +45,35 @@ function getComponentNumber(component, size){
 }
 
 function calculateBasicCOCOMO(){
-    return 0;
+    // a and b initialized to organic values
+    let a = 2.4;
+    let b = 1.05;
+    let kdsi = document.getElementById("kdsi").value;
+    if(document.getElementById("nominal").checked){
+        a = 3.0;
+        b = 1.12;
+    } else if(document.getElementById("complex").checked){
+        a = 3.6;
+        b = 1.20;
+    }
+    let result = (a * Math.pow(kdsi, b));
+
+    document.getElementById("result").innerHTML = result;
 }
 
 function calculateIntermediateCOCOMO(){
+    // a and b initialized to organic values
+    let a = 3.2;
+    let b = 1.05;
+    let kdsi = document.getElementById("kdsi").value;
+    if(document.getElementById("nominal").checked){
+        a = 3.0;
+        b = 1.12;
+    } else if(document.getElementById("complex").checked){
+        a = 2.8;
+        b = 1.20;
+    }
+    let basic = (a * Math.pow(kdsi, b));
+
     return 0;
 }
