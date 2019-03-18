@@ -3,34 +3,43 @@
     <head>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width; initial-scale=1" />
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <script src="js/scripts.js" type="text/javascript"></script>
+        <style>
+            .container {
+                margin-top: 1em;
+                margin-bottom: 1em;
+            }
+        </style>
         <title>TCA | Basic COCOMO</title>
     </head>
     <body>
-        <nav>
-            <ul>
-                <a href="index.html"><li>Home</li></a>
-                <a href="fp.html"><li>Function Points</li></a>
-                <a href="bc.html"><li>Basic COCOMO</li></a>
-                <a href="ic.html"><li>Intermediate COCOMO</li></a>
-            </ul>
+        <nav class="nav nav-tabs justify-content-center">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="fp.html">Function Points</a>                
+            <a class="nav-link active" href="bc.html">Basic COCOMO</a>
+            <a class="nav-link" href="ic.html">Intermediate COCOMO</a>
         </nav>
 
-        <div>
-            <form>
-                <label></label>
-                <input />
-
-                <input type="submit" onclick="calculateBasicCOCOMO()" />
-            </form>
+        <div class="container">
+            <div class="card">
+                <div class="card-body">
+                    <div class="form-group">
+                        <br/>
+                        <input class="btn btn-primary" type="submit" onclick="calculateBasicCOCOMO()" value="Submit" />
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div>
-            <p>
-                <span>Estimated Person-Months: </span>
-                <span id="result"></span>
-            </p>
+        <div class="container">
+            <div class="card">
+                <div class="card-body">
+                        <span>Estimated Person-Months: </span>
+                    <span id="result"></span>
+                </div>
+            </div>
         </div>
-    
     </body>
 </html>

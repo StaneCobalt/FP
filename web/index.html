@@ -3,29 +3,64 @@
     <head>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width; initial-scale=1" />
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <style>
+            .container {
+                margin-top: 1em;
+                margin-bottom: 1em;
+            }
+        </style>
         <title>TCA | HOME</title>
     </head>
     <body>
-        <nav>
-            <ul>
-                <a href="index.html"><li>Home</li></a>
-                <a href="fp.html"><li>Function Points</li></a>
-                <a href="bc.html"><li>Basic COCOMO</li></a>
-                <a href="ic.html"><li>Intermediate COCOMO</li></a>
-            </ul>
+        <nav class="nav nav-tabs justify-content-center">
+            <a class="nav-link active" href="index.html">Home</a>
+            <a class="nav-link" href="fp.html">Function Points</a>                
+            <a class="nav-link" href="bc.html">Basic COCOMO</a>
+            <a class="nav-link" href="ic.html">Intermediate COCOMO</a>
         </nav>
-        <div>
-            <ul>
-                <a href="fp.html">
-                    <li>Function Points</li>
-                </a>
-                <a href="bc.html">
-                    <li>Basic COCOMO</li>
-                </a>
-                <a href="ic.html">
-                    <li>Intermediate COCOMO</li>
-                </a>
-            </ul>
+
+        <div class="container">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Function Points</h5>
+                    <p class="card-text">
+                        Function points are used to gain an estimate of time by determining
+                        the estimated complexity and number of modules within a project
+                        as well as the influence of various technical factors.
+                    </p>
+                    <a class="card-link" href="fp.html">Function Points Calculator</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Basic COCOMO</h5>
+                    <p class="card-text">
+                        Basic COCOMO is the quickest method for gaining an estimate
+                        of time for a project.
+                        It references the overall size and complexity of the project.
+                    </p>
+                    <a class="card-link" href="bc.html">Basic COCOMO Calculator</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Intermediate COCOMO</h5>
+                    <p class="card-text">
+                        A more refined version of basic COCOMO.
+                        In addition to a referenced size, it uses various cost drivers
+                        to determine the estimated amount of time.
+                    </p>
+                    <a class="card-link" href="ic.html">Intermediate COCOMO Calculator</a>
+                </div>
+            </div>
         </div>
     </body>
 </html>
