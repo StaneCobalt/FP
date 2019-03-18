@@ -10,9 +10,9 @@ function tcf(){
     let di = 0.0;
     let size = factors.length;
     for(let i = 0; i < size; i++){
-        di += factors[i];
+        di += factors[i].value;
     }
-    return result = 0.65 + (0.01 * di);
+    return (0.65 + (0.01 * di));
 }
 
 function ufp(){

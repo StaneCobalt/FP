@@ -3,33 +3,145 @@
     <head>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width; initial-scale=1" />
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <script src="js/scripts.js" type="text/javascript"></script>
+        <style>
+            .container {
+                margin-top: 1em;
+                margin-bottom: 1em;
+            }
+        </style>
         <title>TCA | Function Points</title>
+
     </head>
     <body>
-        <nav>
-            <ul>
-                <a href="index.html"><li>Home</li></a>
-                <a href="fp.html"><li>Function Points</li></a>
-                <a href="bc.html"><li>Basic COCOMO</li></a>
-                <a href="ic.html"><li>Intermediate COCOMO</li></a>
-            </ul>
+        <nav class="nav nav-tabs justify-content-center">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link active" href="fp.html">Function Points</a>                
+            <a class="nav-link" href="bc.html">Basic COCOMO</a>
+            <a class="nav-link" href="ic.html">Intermediate COCOMO</a>
         </nav>
 
-        <div>
-            <form>
-                <label></label>
-                <input />
+        <div class="container">
+            <div class="card">
+                <div class="card-body">
+                    <div class="form-group">
+                        <table>
+                            <tr>
+                                <th>Component</th>
+                                <th class="text-center">Simple</th>
+                                <th class="text-center">Average</th>
+                                <th class="text-center">Complex</th>
+                            </tr>
+                            <tr>
+                                <td>Input item</td>
+                                <td><input type="number" class="form-control" placeholder="0" name="three" /></td>
+                                <td><input type="number" class="form-control" placeholder="0" name="four" /></td>
+                                <td><input type="number" class="form-control" placeholder="0" name="six" /></td>
+                            </tr>
+                            <tr>
+                                <td>Output item</td>
+                                <td><input type="number" class="form-control" placeholder="0" name="four" /></td>
+                                <td><input type="number" class="form-control" placeholder="0" name="five" /></td>
+                                <td><input type="number" class="form-control" placeholder="0" name="seven" /></td>
+                            </tr>
+                            <tr>
+                                <td>Inquiry</td>
+                                <td><input type="number" class="form-control" placeholder="0" name="three" /></td>
+                                <td><input type="number" class="form-control" placeholder="0" name="four" /></td>
+                                <td><input type="number" class="form-control" placeholder="0" name="six" /></td>
+                            </tr>
+                            <tr>
+                                <td>Master file</td>
+                                <td><input type="number" class="form-control" placeholder="0" name="seven" /></td>
+                                <td><input type="number" class="form-control" placeholder="0" name="ten" /></td>
+                                <td><input type="number" class="form-control" placeholder="0" name="fifteen" /></td>
+                            </tr>
+                            <tr>
+                                <td>Interface</td>
+                                <td><input type="number" class="form-control" placeholder="0" name="five" /></td>
+                                <td><input type="number" class="form-control" placeholder="0" name="seven" /></td>
+                                <td><input type="number" class="form-control" placeholder="0" name="ten" /></td>
+                            </tr>
+                        </table>
+                        <hr/>
 
-                <input type="submit" onclick="calculateFunctionPoints()" />
-            </form>
+                        <table>
+                            <tr>
+                                <th class="text-center" colspan="2">Technical Factors</th>
+                            </tr>
+                            <tr>
+                                <td>Data communication</td>
+                                <td><input class="form-control" type="number" min="0" max="5" placeholder="0" name="factor"/></td>
+                            </tr>
+                            <tr>
+                                <td>Distributed data processing</td>
+                                <td><input class="form-control" type="number" min="0" max="5" placeholder="0" name="factor"/></td>
+                            </tr>
+                            <tr>
+                                <td>Performance criteria</td>
+                                <td><input class="form-control" type="number" min="0" max="5" placeholder="0" name="factor"/></td>
+                            </tr>
+                            <tr>
+                                <td>Heavily utilized hardware</td>
+                                <td><input class="form-control" type="number" min="0" max="5" placeholder="0" name="factor"/></td>
+                            </tr>
+                            <tr>
+                                <td>High transaction rates</td>
+                                <td><input class="form-control" type="number" min="0" max="5" placeholder="0" name="factor"/></td>
+                            </tr>
+                            <tr>
+                                <td>Online data entry</td>
+                                <td><input class="form-control" type="number" min="0" max="5" placeholder="0" name="factor"/></td>
+                            </tr>
+                            <tr>
+                                <td>End-user efficiency</td>
+                                <td><input class="form-control" type="number" min="0" max="5" placeholder="0" name="factor"/></td>
+                            </tr>
+                            <tr>
+                                <td>Online updating</td>
+                                <td><input class="form-control" type="number" min="0" max="5" placeholder="0" name="factor"/></td>
+                            </tr>
+                            <tr>
+                                <td>Complex computations</td>
+                                <td><input class="form-control" type="number" min="0" max="5" placeholder="0" name="factor"/></td>
+                            </tr>
+                            <tr>
+                                <td>Reusability</td>
+                                <td><input class="form-control" type="number" min="0" max="5" placeholder="0" name="factor"/></td>
+                            </tr>
+                            <tr>
+                                <td>Ease of installation</td>
+                                <td><input class="form-control" type="number" min="0" max="5" placeholder="0" name="factor"/></td>
+                            </tr>
+                            <tr>
+                                <td>Ease of operation</td>
+                                <td><input class="form-control" type="number" min="0" max="5" placeholder="0" name="factor"/></td>
+                            </tr>
+                            <tr>
+                                <td>Portability</td>
+                                <td><input class="form-control" type="number" min="0" max="5" placeholder="0" name="factor"/></td>
+                            </tr>
+                            <tr>
+                                <td>Maintainability</td>
+                                <td><input class="form-control" type="number" min="0" max="5" placeholder="0" name="factor"/></td>
+                            </tr>
+                        </table>
+                        <br/>
+                        <input class="btn btn-primary" type="submit" onclick="calculateFunctionPoints()" value="Submit" />
+                    </div>
+                </div>
+            </div>
         </div>
-        
-        <div>
-            <p>
-                <span>Estimated Functions Points: </span>
-                <span id="result"></span>
-            </p>
+
+        <div class="container">
+            <div class="card">
+                <div class="card-body">
+                    <span>Estimated Functions Points: </span>
+                    <span id="result"></span>
+                </div>
+            </div>
         </div>
 
     </body>
