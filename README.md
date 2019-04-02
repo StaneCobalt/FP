@@ -3,8 +3,9 @@
 Estimates cost in time for software development using either Function Points, Basic COCOMO, or Intermediate COCOMO.
 
 <details>
-  <summary>### CLI</summary>
+  <summary><h2>CLI</h2></summary>
 
+#### Description
 The cli version is built in C++.
 To view the documentation for it [click here](https://stanecobalt.github.io/TCA/html/)
 
@@ -17,8 +18,9 @@ If you're on Windows, I recommend using [MinGW](https://nuwen.net/).
 </details>
 
 <details>
-  <summary>### Web</summary>
+  <summary><h2>Web</h2></summary>
 
+#### Description
 The web version is built in JavaScript and is much easier to use since it has a GUI.
 
 #### How to Use
@@ -27,7 +29,7 @@ To use the web version, you can simply [click here](https://stanecobalt.github.i
 </details>
 
 <details>
-  <summary>## Function Points</summary>
+  <summary><h2>Function Points</h2></summary>
 
 #### Algorithm
 N = number of that type of component
@@ -69,10 +71,11 @@ These are used for degrees of influence and range from values 0 for no influence
 12. Ease of operation
 13. Portability
 14. Maintainability
+
 </details>
 
 <details>
-  <summary>## COCOMO</summary>
+  <summary><h2>COCOMO</h2></summary>
 
 ### Basic COCOMO
 #### Algorithm
