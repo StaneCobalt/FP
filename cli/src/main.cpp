@@ -2,7 +2,13 @@
 #include "../include/functionPoint.h"
 #include <iostream>
 
+//! Logic controller for Function Points
 void FunctionPointHelper();
+
+//! Logic controller for basic and intermediate COCOMO
+/*!
+	\param costDriversUsed is a bool. If true, will calculate using intermediate COCOMO, otherwise does basic.
+*/
 void COCOMOHelper(bool costDriversUsed);
 
 int main(){

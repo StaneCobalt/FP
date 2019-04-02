@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="cocomo_8cpp" kind="file" language="C++">
+    <compoundname>cocomo.cpp</compoundname>
+    <includes refid="cocomo_8h" local="yes">../include/cocomo.h</includes>
+    <includes local="no">math.h</includes>
+    <incdepgraph>
+      <node id="8">
+        <label>cli/src/cocomo.cpp</label>
+        <link refid="cocomo_8cpp"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>math.h</label>
+      </node>
+      <node id="9">
+        <label>../include/cocomo.h</label>
+        <link refid="cocomo_8h"/>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;../include/cocomo.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Intermediate<sp/>COCOMO<sp/>calculator</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="class_c_o_c_o_m_o_1a1fc0ead0690cbfa98aa0064af26e8600" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_c_o_c_o_m_o_1a1fc0ead0690cbfa98aa0064af26e8600" kindref="member">COCOMO::getEstimate</ref>(){</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>result<sp/>=<sp/><ref refid="class_c_o_c_o_m_o_1a1f9122d4b195b9c7e2ddb1d2c5f300ac" kindref="member">a</ref><sp/>*<sp/>(pow(<ref refid="class_c_o_c_o_m_o_1aff2bebe8573d17cf70e7ec38e116bbf5" kindref="member">kdsi</ref>,<ref refid="class_c_o_c_o_m_o_1a6270dd3626e75e24d98321576e39f16e" kindref="member">b</ref>));</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>costDriverValue<sp/>=<sp/>1.00;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="cocomo_8h_1a777e79e200cfb0374c8a1c5a22baa98a" kindref="member">costDriverSize</ref>;<sp/>i++){</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>costDriverValue<sp/>*=<sp/>this-&gt;<ref refid="class_c_o_c_o_m_o_1a78367abd2fd78f4b718cfc707c3db830" kindref="member">costDriverValues</ref>[i][<ref refid="class_c_o_c_o_m_o_1a08e1493446df25b20e8703be046ccec6" kindref="member">costDrivers</ref>[i]];</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>result<sp/>*=<sp/>costDriverValue;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>set<sp/>a<sp/>and<sp/>b,<sp/>1<sp/>=<sp/>organic,<sp/>2<sp/>=<sp/>semidetached,<sp/>3<sp/>=<sp/>embedded</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="class_c_o_c_o_m_o_1a4bf94bae58329f98ef1cf080ec4c2f8c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_o_c_o_m_o_1a4bf94bae58329f98ef1cf080ec4c2f8c" kindref="member">COCOMO::setConstants</ref>(</highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>mode,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isIntermediate){</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!isIntermediate){</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal">(mode){</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>1:</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_c_o_c_o_m_o_1a1f9122d4b195b9c7e2ddb1d2c5f300ac" kindref="member">a</ref><sp/>=<sp/>2.4;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_c_o_c_o_m_o_1a6270dd3626e75e24d98321576e39f16e" kindref="member">b</ref><sp/>=<sp/>1.05;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>2:</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_c_o_c_o_m_o_1a1f9122d4b195b9c7e2ddb1d2c5f300ac" kindref="member">a</ref><sp/>=<sp/>3.0;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_c_o_c_o_m_o_1a6270dd3626e75e24d98321576e39f16e" kindref="member">b</ref><sp/>=<sp/>1.12;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>3:</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_c_o_c_o_m_o_1a1f9122d4b195b9c7e2ddb1d2c5f300ac" kindref="member">a</ref><sp/>=<sp/>3.6;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_c_o_c_o_m_o_1a6270dd3626e75e24d98321576e39f16e" kindref="member">b</ref><sp/>=<sp/>1.20;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_c_o_c_o_m_o_1a1f9122d4b195b9c7e2ddb1d2c5f300ac" kindref="member">a</ref><sp/>=<sp/>2.4;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_c_o_c_o_m_o_1a6270dd3626e75e24d98321576e39f16e" kindref="member">b</ref><sp/>=<sp/>1.05;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal">(mode){</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>1:</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_c_o_c_o_m_o_1a1f9122d4b195b9c7e2ddb1d2c5f300ac" kindref="member">a</ref><sp/>=<sp/>3.2;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_c_o_c_o_m_o_1a6270dd3626e75e24d98321576e39f16e" kindref="member">b</ref><sp/>=<sp/>1.05;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>2:</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_c_o_c_o_m_o_1a1f9122d4b195b9c7e2ddb1d2c5f300ac" kindref="member">a</ref><sp/>=<sp/>3.0;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_c_o_c_o_m_o_1a6270dd3626e75e24d98321576e39f16e" kindref="member">b</ref><sp/>=<sp/>1.12;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>3:</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_c_o_c_o_m_o_1a1f9122d4b195b9c7e2ddb1d2c5f300ac" kindref="member">a</ref><sp/>=<sp/>2.8;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_c_o_c_o_m_o_1a6270dd3626e75e24d98321576e39f16e" kindref="member">b</ref><sp/>=<sp/>1.20;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_c_o_c_o_m_o_1a1f9122d4b195b9c7e2ddb1d2c5f300ac" kindref="member">a</ref><sp/>=<sp/>3.2;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_c_o_c_o_m_o_1a6270dd3626e75e24d98321576e39f16e" kindref="member">b</ref><sp/>=<sp/>1.05;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment">//<sp/>set<sp/>estimated<sp/>thousand<sp/>lines<sp/>of<sp/>code</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="class_c_o_c_o_m_o_1a09f36eda3f22f513822a7cdb09ac91a1" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_o_c_o_m_o_1a09f36eda3f22f513822a7cdb09ac91a1" kindref="member">COCOMO::setKDSI</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>kdsi){</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;kdsi<sp/>=<sp/><ref refid="class_c_o_c_o_m_o_1aff2bebe8573d17cf70e7ec38e116bbf5" kindref="member">kdsi</ref>;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="comment">//<sp/>mutator<sp/>for<sp/>costDrivers[]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment">//<sp/>sets<sp/>costDriver<sp/>to<sp/>the<sp/>passed<sp/>in<sp/>value</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="comment">//<sp/>if<sp/>value<sp/>is<sp/>out<sp/>of<sp/>bounds,<sp/>sets<sp/>costDriver<sp/>to<sp/>nominal<sp/>instead</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="class_c_o_c_o_m_o_1a0011140084bc7d1787396d33ea52b232" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_o_c_o_m_o_1a0011140084bc7d1787396d33ea52b232" kindref="member">COCOMO::setCostDrivers</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>values[<ref refid="cocomo_8h_1a777e79e200cfb0374c8a1c5a22baa98a" kindref="member">costDriverSize</ref>]){</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="cocomo_8h_1a777e79e200cfb0374c8a1c5a22baa98a" kindref="member">costDriverSize</ref>;<sp/>i++){</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_c_o_c_o_m_o_1a08e1493446df25b20e8703be046ccec6" kindref="member">costDrivers</ref>[i]<sp/>=<sp/>(values[i]<sp/>&gt;=<sp/>0<sp/>&amp;&amp;<sp/>values[i]<sp/>&lt;<sp/>6)<sp/>?<sp/>values[i]<sp/>:<sp/>2;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="comment">//<sp/>initialize<sp/>all<sp/>costDriver<sp/>values<sp/>to<sp/>nominal</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="class_c_o_c_o_m_o_1a2fc6b577fc892f9d39f0c9b80921de56" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_o_c_o_m_o_1a2fc6b577fc892f9d39f0c9b80921de56" kindref="member">COCOMO::initCostDrivers</ref>(){</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="cocomo_8h_1a777e79e200cfb0374c8a1c5a22baa98a" kindref="member">costDriverSize</ref>;<sp/>i++){</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_c_o_c_o_m_o_1a08e1493446df25b20e8703be046ccec6" kindref="member">costDrivers</ref>[i]<sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="cli/src/cocomo.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,271 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="class_c_o_c_o_m_o" kind="class" language="C++" prot="public">
+    <compoundname>COCOMO</compoundname>
+    <includes refid="cocomo_8h" local="no">cocomo.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_c_o_c_o_m_o_1a1f9122d4b195b9c7e2ddb1d2c5f300ac" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float COCOMO::a</definition>
+        <argsstring></argsstring>
+        <name>a</name>
+        <briefdescription>
+<para>The value of the multiplier. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cli/include/cocomo.h" line="16" column="1" bodyfile="cli/include/cocomo.h" bodystart="16" bodyend="-1"/>
+        <referencedby refid="class_c_o_c_o_m_o_1a1fc0ead0690cbfa98aa0064af26e8600" compoundref="cocomo_8cpp" startline="5" endline="13">getEstimate</referencedby>
+        <referencedby refid="class_c_o_c_o_m_o_1a4bf94bae58329f98ef1cf080ec4c2f8c" compoundref="cocomo_8cpp" startline="16" endline="56">setConstants</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_o_c_o_m_o_1a6270dd3626e75e24d98321576e39f16e" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float COCOMO::b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <briefdescription>
+<para>The value of the exponent. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cli/include/cocomo.h" line="17" column="1" bodyfile="cli/include/cocomo.h" bodystart="17" bodyend="-1"/>
+        <referencedby refid="class_c_o_c_o_m_o_1a1fc0ead0690cbfa98aa0064af26e8600" compoundref="cocomo_8cpp" startline="5" endline="13">getEstimate</referencedby>
+        <referencedby refid="class_c_o_c_o_m_o_1a4bf94bae58329f98ef1cf080ec4c2f8c" compoundref="cocomo_8cpp" startline="16" endline="56">setConstants</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_o_c_o_m_o_1aff2bebe8573d17cf70e7ec38e116bbf5" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float COCOMO::kdsi</definition>
+        <argsstring></argsstring>
+        <name>kdsi</name>
+        <briefdescription>
+<para>The lines of code in thousands. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cli/include/cocomo.h" line="18" column="1" bodyfile="cli/include/cocomo.h" bodystart="18" bodyend="-1"/>
+        <referencedby refid="class_c_o_c_o_m_o_1a1fc0ead0690cbfa98aa0064af26e8600" compoundref="cocomo_8cpp" startline="5" endline="13">getEstimate</referencedby>
+        <referencedby refid="class_c_o_c_o_m_o_1a09f36eda3f22f513822a7cdb09ac91a1" compoundref="cocomo_8cpp" startline="59" endline="61">setKDSI</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_o_c_o_m_o_1a78367abd2fd78f4b718cfc707c3db830" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float COCOMO::costDriverValues[costDriverSize][6]</definition>
+        <argsstring>[costDriverSize][6]</argsstring>
+        <name>costDriverValues</name>
+        <initializer>= {
+			{0.75, 0.88, 1.00, 1.15, 1.40, 1.40}, 
+			{0.94, 0.94, 1.00, 1.08, 1.16, 1.16}, 
+			{0.70, 0.85, 1.00, 1.15, 1.30, 1.65}, 
+			{1.00, 1.00, 1.00, 1.11, 1.30, 1.66}, 
+			{1.00, 1.00, 1.00, 1.06, 1.21, 1.56}, 
+			{0.87, 0.87, 1.00, 1.15, 1.30, 1.30}, 
+			{0.87, 0.87, 1.00, 1.07, 1.15, 1.15}, 
+			{1.46, 1.19, 1.00, 0.86, 0.71, 0.71}, 
+			{1.29, 1.13, 1.00, 0.91, 0.82, 0.82}, 
+			{1.42, 1.17, 1.00, 0.86, 0.70, 0.70}, 
+			{1.21, 1.10, 1.00, 0.90, 0.90, 0.90}, 
+			{1.14, 1.07, 1.00, 0.95, 0.95, 0.95}, 
+			{1.24, 1.10, 1.00, 0.91, 0.82, 0.82}, 
+			{1.24, 1.10, 1.00, 0.91, 0.83, 0.83}, 
+			{1.23, 1.08, 1.00, 1.04, 1.10, 1.10}, 
+		}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Cost drivers used for refining the estimate in intermediate <ref refid="class_c_o_c_o_m_o" kindref="compound">COCOMO</ref>. Rankings: very low, low, nominal, high, very high, extra high </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cli/include/cocomo.h" line="23" column="1" bodyfile="cli/include/cocomo.h" bodystart="23" bodyend="-1"/>
+        <referencedby refid="class_c_o_c_o_m_o_1a1fc0ead0690cbfa98aa0064af26e8600" compoundref="cocomo_8cpp" startline="5" endline="13">getEstimate</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_o_c_o_m_o_1a08e1493446df25b20e8703be046ccec6" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float COCOMO::costDrivers[costDriverSize]</definition>
+        <argsstring>[costDriverSize]</argsstring>
+        <name>costDrivers</name>
+        <briefdescription>
+<para>Used for selecting the cost driver values. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cli/include/cocomo.h" line="41" column="1" bodyfile="cli/include/cocomo.h" bodystart="41" bodyend="-1"/>
+        <referencedby refid="class_c_o_c_o_m_o_1a1fc0ead0690cbfa98aa0064af26e8600" compoundref="cocomo_8cpp" startline="5" endline="13">getEstimate</referencedby>
+        <referencedby refid="class_c_o_c_o_m_o_1a0011140084bc7d1787396d33ea52b232" compoundref="cocomo_8cpp" startline="66" endline="70">setCostDrivers</referencedby>
+        <referencedby refid="class_c_o_c_o_m_o_1a2fc6b577fc892f9d39f0c9b80921de56" compoundref="cocomo_8cpp" startline="73" endline="77">initCostDrivers</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_c_o_c_o_m_o_1aa8619b776216f89366b2c4570deff502" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>COCOMO::COCOMO</definition>
+        <argsstring>()=default</argsstring>
+        <name>COCOMO</name>
+        <briefdescription>
+<para>Default constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cli/include/cocomo.h" line="45" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_o_c_o_m_o_1a1fc0ead0690cbfa98aa0064af26e8600" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float COCOMO::getEstimate</definition>
+        <argsstring>()</argsstring>
+        <name>getEstimate</name>
+        <briefdescription>
+<para>Performs <ref refid="class_c_o_c_o_m_o" kindref="compound">COCOMO</ref> calculations. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cli/include/cocomo.h" line="47" column="1" bodyfile="cli/src/cocomo.cpp" bodystart="5" bodyend="13"/>
+        <references refid="class_c_o_c_o_m_o_1a1f9122d4b195b9c7e2ddb1d2c5f300ac" compoundref="cocomo_8h" startline="16">a</references>
+        <references refid="class_c_o_c_o_m_o_1aff2bebe8573d17cf70e7ec38e116bbf5" compoundref="cocomo_8h" startline="18">kdsi</references>
+        <references refid="class_c_o_c_o_m_o_1a6270dd3626e75e24d98321576e39f16e" compoundref="cocomo_8h" startline="17">b</references>
+        <references refid="cocomo_8h_1a777e79e200cfb0374c8a1c5a22baa98a" compoundref="cocomo_8h" startline="4">costDriverSize</references>
+        <references refid="class_c_o_c_o_m_o_1a78367abd2fd78f4b718cfc707c3db830" compoundref="cocomo_8h" startline="23">costDriverValues</references>
+        <references refid="class_c_o_c_o_m_o_1a08e1493446df25b20e8703be046ccec6" compoundref="cocomo_8h" startline="41">costDrivers</references>
+        <referencedby refid="main_8cpp_1ad93c28ea8e31b9dc78cf199c15a9f358" compoundref="main_8cpp" startline="108" endline="161">COCOMOHelper</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_o_c_o_m_o_1a4bf94bae58329f98ef1cf080ec4c2f8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void COCOMO::setConstants</definition>
+        <argsstring>(short mode, bool isIntermediate)</argsstring>
+        <name>setConstants</name>
+        <param>
+          <type>short</type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>isIntermediate</declname>
+        </param>
+        <briefdescription>
+<para>A mutator for a and b. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is a short. 1 = organic, 2 = semi-detached, 3 = embedded, default is organic. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>isIntermediate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is a bool. It determines whether to set a and b according to basic or intermediate <ref refid="class_c_o_c_o_m_o" kindref="compound">COCOMO</ref> values. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cli/include/cocomo.h" line="53" column="1" bodyfile="cli/src/cocomo.cpp" bodystart="16" bodyend="56"/>
+        <references refid="class_c_o_c_o_m_o_1a1f9122d4b195b9c7e2ddb1d2c5f300ac" compoundref="cocomo_8h" startline="16">a</references>
+        <references refid="class_c_o_c_o_m_o_1a6270dd3626e75e24d98321576e39f16e" compoundref="cocomo_8h" startline="17">b</references>
+        <referencedby refid="main_8cpp_1ad93c28ea8e31b9dc78cf199c15a9f358" compoundref="main_8cpp" startline="108" endline="161">COCOMOHelper</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_o_c_o_m_o_1a09f36eda3f22f513822a7cdb09ac91a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void COCOMO::setKDSI</definition>
+        <argsstring>(float kdsi)</argsstring>
+        <name>setKDSI</name>
+        <param>
+          <type>float</type>
+          <declname>kdsi</declname>
+        </param>
+        <briefdescription>
+<para>A mutator for the estimated thousand lines of code. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cli/include/cocomo.h" line="55" column="1" bodyfile="cli/src/cocomo.cpp" bodystart="59" bodyend="61"/>
+        <references refid="class_c_o_c_o_m_o_1aff2bebe8573d17cf70e7ec38e116bbf5" compoundref="cocomo_8h" startline="18">kdsi</references>
+        <referencedby refid="main_8cpp_1ad93c28ea8e31b9dc78cf199c15a9f358" compoundref="main_8cpp" startline="108" endline="161">COCOMOHelper</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_o_c_o_m_o_1a0011140084bc7d1787396d33ea52b232" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void COCOMO::setCostDrivers</definition>
+        <argsstring>(float values[costDriverSize])</argsstring>
+        <name>setCostDrivers</name>
+        <param>
+          <type>float</type>
+          <declname>values</declname>
+          <array>[costDriverSize]</array>
+        </param>
+        <briefdescription>
+<para>A mutator for costDrivers[]. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cli/include/cocomo.h" line="57" column="1" bodyfile="cli/src/cocomo.cpp" bodystart="66" bodyend="70"/>
+        <references refid="cocomo_8h_1a777e79e200cfb0374c8a1c5a22baa98a" compoundref="cocomo_8h" startline="4">costDriverSize</references>
+        <references refid="class_c_o_c_o_m_o_1a08e1493446df25b20e8703be046ccec6" compoundref="cocomo_8h" startline="41">costDrivers</references>
+        <referencedby refid="main_8cpp_1ad93c28ea8e31b9dc78cf199c15a9f358" compoundref="main_8cpp" startline="108" endline="161">COCOMOHelper</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_o_c_o_m_o_1a2fc6b577fc892f9d39f0c9b80921de56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void COCOMO::initCostDrivers</definition>
+        <argsstring>()</argsstring>
+        <name>initCostDrivers</name>
+        <briefdescription>
+<para>Initializes all costDriver values to the semi-detached values. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cli/include/cocomo.h" line="59" column="1" bodyfile="cli/src/cocomo.cpp" bodystart="73" bodyend="77"/>
+        <references refid="cocomo_8h_1a777e79e200cfb0374c8a1c5a22baa98a" compoundref="cocomo_8h" startline="4">costDriverSize</references>
+        <references refid="class_c_o_c_o_m_o_1a08e1493446df25b20e8703be046ccec6" compoundref="cocomo_8h" startline="41">costDrivers</references>
+        <referencedby refid="main_8cpp_1ad93c28ea8e31b9dc78cf199c15a9f358" compoundref="main_8cpp" startline="108" endline="161">COCOMOHelper</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The <ref refid="class_c_o_c_o_m_o" kindref="compound">COCOMO</ref> class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class performs both basic and intermediate <ref refid="class_c_o_c_o_m_o" kindref="compound">COCOMO</ref> operations. Basic <ref refid="class_c_o_c_o_m_o" kindref="compound">COCOMO</ref> just uses a, b, and kdsi to find its estimate. Intermediate <ref refid="class_c_o_c_o_m_o" kindref="compound">COCOMO</ref> uses a, b, kdsi, and cost drivers to refine the estimate. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>COCOMO</label>
+        <link refid="class_c_o_c_o_m_o"/>
+      </node>
+    </collaborationgraph>
+    <location file="cli/include/cocomo.h" line="14" column="1" bodyfile="cli/include/cocomo.h" bodystart="14" bodyend="60"/>
+    <listofallmembers>
+      <member refid="class_c_o_c_o_m_o_1a1f9122d4b195b9c7e2ddb1d2c5f300ac" prot="protected" virt="non-virtual"><scope>COCOMO</scope><name>a</name></member>
+      <member refid="class_c_o_c_o_m_o_1a6270dd3626e75e24d98321576e39f16e" prot="protected" virt="non-virtual"><scope>COCOMO</scope><name>b</name></member>
+      <member refid="class_c_o_c_o_m_o_1aa8619b776216f89366b2c4570deff502" prot="public" virt="non-virtual"><scope>COCOMO</scope><name>COCOMO</name></member>
+      <member refid="class_c_o_c_o_m_o_1a08e1493446df25b20e8703be046ccec6" prot="protected" virt="non-virtual"><scope>COCOMO</scope><name>costDrivers</name></member>
+      <member refid="class_c_o_c_o_m_o_1a78367abd2fd78f4b718cfc707c3db830" prot="protected" virt="non-virtual"><scope>COCOMO</scope><name>costDriverValues</name></member>
+      <member refid="class_c_o_c_o_m_o_1a1fc0ead0690cbfa98aa0064af26e8600" prot="public" virt="non-virtual"><scope>COCOMO</scope><name>getEstimate</name></member>
+      <member refid="class_c_o_c_o_m_o_1a2fc6b577fc892f9d39f0c9b80921de56" prot="public" virt="non-virtual"><scope>COCOMO</scope><name>initCostDrivers</name></member>
+      <member refid="class_c_o_c_o_m_o_1aff2bebe8573d17cf70e7ec38e116bbf5" prot="protected" virt="non-virtual"><scope>COCOMO</scope><name>kdsi</name></member>
+      <member refid="class_c_o_c_o_m_o_1a4bf94bae58329f98ef1cf080ec4c2f8c" prot="public" virt="non-virtual"><scope>COCOMO</scope><name>setConstants</name></member>
+      <member refid="class_c_o_c_o_m_o_1a0011140084bc7d1787396d33ea52b232" prot="public" virt="non-virtual"><scope>COCOMO</scope><name>setCostDrivers</name></member>
+      <member refid="class_c_o_c_o_m_o_1a09f36eda3f22f513822a7cdb09ac91a1" prot="public" virt="non-virtual"><scope>COCOMO</scope><name>setKDSI</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

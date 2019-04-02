@@ -1,0 +1,747 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="class_function_point" kind="class" language="C++" prot="public">
+    <compoundname>FunctionPoint</compoundname>
+    <includes refid="function_point_8h" local="no">functionPoint.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_function_point_1a692a9f1bdc74477902d661b11162cda5" prot="protected" static="no" mutable="no">
+        <type>const short</type>
+        <definition>const short FunctionPoint::input[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>input</name>
+        <initializer>= {3,4,6}</initializer>
+        <briefdescription>
+<para>holds complexity values for the input type of component </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cli/include/functionPoint.h" line="17" column="1" bodyfile="cli/include/functionPoint.h" bodystart="17" bodyend="-1"/>
+        <referencedby refid="class_function_point_1a1e8ea318a3935cade88f4c108ee85a35" compoundref="function_point_8cpp" startline="44" endline="56">getEstimate</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_function_point_1a3c285e075c51371cc9176c1e0cabba3e" prot="protected" static="no" mutable="no">
+        <type>const short</type>
+        <definition>const short FunctionPoint::output[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>output</name>
+        <initializer>= {4,5,7}</initializer>
+        <briefdescription>
+<para>holds complexity values for the output type of component </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cli/include/functionPoint.h" line="18" column="1" bodyfile="cli/include/functionPoint.h" bodystart="18" bodyend="-1"/>
+        <referencedby refid="class_function_point_1a1e8ea318a3935cade88f4c108ee85a35" compoundref="function_point_8cpp" startline="44" endline="56">getEstimate</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_function_point_1a145d9cd145d9c64c6e9230e6f536de88" prot="protected" static="no" mutable="no">
+        <type>const short</type>
+        <definition>const short FunctionPoint::inquiry[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>inquiry</name>
+        <initializer>= {3,4,6}</initializer>
+        <briefdescription>
+<para>holds complexity values for the inquiry type of component </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cli/include/functionPoint.h" line="19" column="1" bodyfile="cli/include/functionPoint.h" bodystart="19" bodyend="-1"/>
+        <referencedby refid="class_function_point_1a1e8ea318a3935cade88f4c108ee85a35" compoundref="function_point_8cpp" startline="44" endline="56">getEstimate</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_function_point_1a9791b5dabd38bbc7227cbea47f5625ae" prot="protected" static="no" mutable="no">
+        <type>const short</type>
+        <definition>const short FunctionPoint::master[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>master</name>
+        <initializer>= {7,10,15}</initializer>
+        <briefdescription>
+<para>holds complexity values for the master type of component </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cli/include/functionPoint.h" line="20" column="1" bodyfile="cli/include/functionPoint.h" bodystart="20" bodyend="-1"/>
+        <referencedby refid="class_function_point_1a1e8ea318a3935cade88f4c108ee85a35" compoundref="function_point_8cpp" startline="44" endline="56">getEstimate</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_function_point_1a86f8ef6ddaa89845c57a26bad29810f6" prot="protected" static="no" mutable="no">
+        <type>const short</type>
+        <definition>const short FunctionPoint::interface[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>interface</name>
+        <initializer>= {5,7,10}</initializer>
+        <briefdescription>
+<para>holds complexity values for the interface type of component </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cli/include/functionPoint.h" line="21" column="1" bodyfile="cli/include/functionPoint.h" bodystart="21" bodyend="-1"/>
+        <referencedby refid="class_function_point_1a1e8ea318a3935cade88f4c108ee85a35" compoundref="function_point_8cpp" startline="44" endline="56">getEstimate</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_function_point_1acb9ce612aa9550cd72c8252ed240fd0b" prot="protected" static="no" mutable="no">
+        <type>short</type>
+        <definition>short FunctionPoint::inp</definition>
+        <argsstring></argsstring>
+        <name>inp</name>
+        <briefdescription>
+<para>holds index for selecting input complexity </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cli/include/functionPoint.h" line="24" column="1" bodyfile="cli/include/functionPoint.h" bodystart="24" bodyend="-1"/>
+        <referencedby refid="class_function_point_1a595bd9d315ed2f798de1d8de1b351516" compoundref="function_point_8cpp" startline="6" endline="13">setComplexities</referencedby>
+        <referencedby refid="class_function_point_1a1e8ea318a3935cade88f4c108ee85a35" compoundref="function_point_8cpp" startline="44" endline="56">getEstimate</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_function_point_1a12c50a799960143695394f46c424245c" prot="protected" static="no" mutable="no">
+        <type>short</type>
+        <definition>short FunctionPoint::out</definition>
+        <argsstring></argsstring>
+        <name>out</name>
+        <briefdescription>
+<para>holds index for selecting output complexity </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cli/include/functionPoint.h" line="25" column="1" bodyfile="cli/include/functionPoint.h" bodystart="25" bodyend="-1"/>
+        <referencedby refid="class_function_point_1a595bd9d315ed2f798de1d8de1b351516" compoundref="function_point_8cpp" startline="6" endline="13">setComplexities</referencedby>
+        <referencedby refid="class_function_point_1a1e8ea318a3935cade88f4c108ee85a35" compoundref="function_point_8cpp" startline="44" endline="56">getEstimate</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_function_point_1a58d390382da9c43a7ff5bab71e13aff9" prot="protected" static="no" mutable="no">
+        <type>short</type>
+        <definition>short FunctionPoint::inq</definition>
+        <argsstring></argsstring>
+        <name>inq</name>
+        <briefdescription>
+<para>holds index for selecting inquiry complexity </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cli/include/functionPoint.h" line="26" column="1" bodyfile="cli/include/functionPoint.h" bodystart="26" bodyend="-1"/>
+        <referencedby refid="class_function_point_1a595bd9d315ed2f798de1d8de1b351516" compoundref="function_point_8cpp" startline="6" endline="13">setComplexities</referencedby>
+        <referencedby refid="class_function_point_1a1e8ea318a3935cade88f4c108ee85a35" compoundref="function_point_8cpp" startline="44" endline="56">getEstimate</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_function_point_1ac78452e49c07c118ee5bd4c3ebbcf82a" prot="protected" static="no" mutable="no">
+        <type>short</type>
+        <definition>short FunctionPoint::maf</definition>
+        <argsstring></argsstring>
+        <name>maf</name>
+        <briefdescription>
+<para>holds index for selecting master complexity </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cli/include/functionPoint.h" line="27" column="1" bodyfile="cli/include/functionPoint.h" bodystart="27" bodyend="-1"/>
+        <referencedby refid="class_function_point_1a595bd9d315ed2f798de1d8de1b351516" compoundref="function_point_8cpp" startline="6" endline="13">setComplexities</referencedby>
+        <referencedby refid="class_function_point_1a1e8ea318a3935cade88f4c108ee85a35" compoundref="function_point_8cpp" startline="44" endline="56">getEstimate</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_function_point_1a346f21eefe30cc7b09859bd3c21c32a7" prot="protected" static="no" mutable="no">
+        <type>short</type>
+        <definition>short FunctionPoint::inf</definition>
+        <argsstring></argsstring>
+        <name>inf</name>
+        <briefdescription>
+<para>holds index for selecting interface complexity </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cli/include/functionPoint.h" line="28" column="1" bodyfile="cli/include/functionPoint.h" bodystart="28" bodyend="-1"/>
+        <referencedby refid="class_function_point_1a595bd9d315ed2f798de1d8de1b351516" compoundref="function_point_8cpp" startline="6" endline="13">setComplexities</referencedby>
+        <referencedby refid="class_function_point_1a1e8ea318a3935cade88f4c108ee85a35" compoundref="function_point_8cpp" startline="44" endline="56">getEstimate</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_function_point_1ae7417194ce3ac9e74f03c38db380e2cd" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int FunctionPoint::nInp</definition>
+        <argsstring></argsstring>
+        <name>nInp</name>
+        <briefdescription>
+<para>Number of inputs. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cli/include/functionPoint.h" line="30" column="1" bodyfile="cli/include/functionPoint.h" bodystart="30" bodyend="-1"/>
+        <referencedby refid="class_function_point_1a8f59608826f3c64524033ccbb0cddb6d" compoundref="function_point_8cpp" startline="16" endline="22">setComponents</referencedby>
+        <referencedby refid="class_function_point_1a1e8ea318a3935cade88f4c108ee85a35" compoundref="function_point_8cpp" startline="44" endline="56">getEstimate</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_function_point_1a03abe81b3870db0637b767f3f29f03bf" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int FunctionPoint::nOut</definition>
+        <argsstring></argsstring>
+        <name>nOut</name>
+        <briefdescription>
+<para>Number of outputs. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cli/include/functionPoint.h" line="31" column="1" bodyfile="cli/include/functionPoint.h" bodystart="31" bodyend="-1"/>
+        <referencedby refid="class_function_point_1a8f59608826f3c64524033ccbb0cddb6d" compoundref="function_point_8cpp" startline="16" endline="22">setComponents</referencedby>
+        <referencedby refid="class_function_point_1a1e8ea318a3935cade88f4c108ee85a35" compoundref="function_point_8cpp" startline="44" endline="56">getEstimate</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_function_point_1af6609a51e21dfdc323e25ef29dbb3e77" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int FunctionPoint::nInq</definition>
+        <argsstring></argsstring>
+        <name>nInq</name>
+        <briefdescription>
+<para>Number of inquiries. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cli/include/functionPoint.h" line="32" column="1" bodyfile="cli/include/functionPoint.h" bodystart="32" bodyend="-1"/>
+        <referencedby refid="class_function_point_1a8f59608826f3c64524033ccbb0cddb6d" compoundref="function_point_8cpp" startline="16" endline="22">setComponents</referencedby>
+        <referencedby refid="class_function_point_1a1e8ea318a3935cade88f4c108ee85a35" compoundref="function_point_8cpp" startline="44" endline="56">getEstimate</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_function_point_1affc3a4d27db73a50ae39aa893b6e1898" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int FunctionPoint::nMaf</definition>
+        <argsstring></argsstring>
+        <name>nMaf</name>
+        <briefdescription>
+<para>Number of masters. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cli/include/functionPoint.h" line="33" column="1" bodyfile="cli/include/functionPoint.h" bodystart="33" bodyend="-1"/>
+        <referencedby refid="class_function_point_1a8f59608826f3c64524033ccbb0cddb6d" compoundref="function_point_8cpp" startline="16" endline="22">setComponents</referencedby>
+        <referencedby refid="class_function_point_1a1e8ea318a3935cade88f4c108ee85a35" compoundref="function_point_8cpp" startline="44" endline="56">getEstimate</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_function_point_1a4bc020c9ac700c74c4119bee957b8dad" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int FunctionPoint::nInf</definition>
+        <argsstring></argsstring>
+        <name>nInf</name>
+        <briefdescription>
+<para>Number of interfaces. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cli/include/functionPoint.h" line="34" column="1" bodyfile="cli/include/functionPoint.h" bodystart="34" bodyend="-1"/>
+        <referencedby refid="class_function_point_1a8f59608826f3c64524033ccbb0cddb6d" compoundref="function_point_8cpp" startline="16" endline="22">setComponents</referencedby>
+        <referencedby refid="class_function_point_1a1e8ea318a3935cade88f4c108ee85a35" compoundref="function_point_8cpp" startline="44" endline="56">getEstimate</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_function_point_1a2230b051962aeca48215fee473eb125a" prot="protected" static="no" mutable="no">
+        <type>short</type>
+        <definition>short FunctionPoint::dcomm</definition>
+        <argsstring></argsstring>
+        <name>dcomm</name>
+        <briefdescription>
+<para>Measure of influence for data communication. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cli/include/functionPoint.h" line="37" column="1" bodyfile="cli/include/functionPoint.h" bodystart="37" bodyend="-1"/>
+        <referencedby refid="class_function_point_1a8c383a624d9b2bb1e2c559b6fd8cdfd5" compoundref="function_point_8cpp" startline="25" endline="41">setTechnicalFactors</referencedby>
+        <referencedby refid="class_function_point_1a1e8ea318a3935cade88f4c108ee85a35" compoundref="function_point_8cpp" startline="44" endline="56">getEstimate</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_function_point_1a20536cf364d37155f21e3b5aac2e77d2" prot="protected" static="no" mutable="no">
+        <type>short</type>
+        <definition>short FunctionPoint::dpro</definition>
+        <argsstring></argsstring>
+        <name>dpro</name>
+        <briefdescription>
+<para>Measure of influence for distributed data processing. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cli/include/functionPoint.h" line="38" column="1" bodyfile="cli/include/functionPoint.h" bodystart="38" bodyend="-1"/>
+        <referencedby refid="class_function_point_1a8c383a624d9b2bb1e2c559b6fd8cdfd5" compoundref="function_point_8cpp" startline="25" endline="41">setTechnicalFactors</referencedby>
+        <referencedby refid="class_function_point_1a1e8ea318a3935cade88f4c108ee85a35" compoundref="function_point_8cpp" startline="44" endline="56">getEstimate</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_function_point_1a1b45a52ca52132b64f2ae5cc0255c1ac" prot="protected" static="no" mutable="no">
+        <type>short</type>
+        <definition>short FunctionPoint::perf</definition>
+        <argsstring></argsstring>
+        <name>perf</name>
+        <briefdescription>
+<para>Measure of influence for performance criteria. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cli/include/functionPoint.h" line="39" column="1" bodyfile="cli/include/functionPoint.h" bodystart="39" bodyend="-1"/>
+        <referencedby refid="class_function_point_1a8c383a624d9b2bb1e2c559b6fd8cdfd5" compoundref="function_point_8cpp" startline="25" endline="41">setTechnicalFactors</referencedby>
+        <referencedby refid="class_function_point_1a1e8ea318a3935cade88f4c108ee85a35" compoundref="function_point_8cpp" startline="44" endline="56">getEstimate</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_function_point_1a910446974eef8b8c9158e8948890fd83" prot="protected" static="no" mutable="no">
+        <type>short</type>
+        <definition>short FunctionPoint::util</definition>
+        <argsstring></argsstring>
+        <name>util</name>
+        <briefdescription>
+<para>Measure of influence for heavily utilized hardware. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cli/include/functionPoint.h" line="40" column="1" bodyfile="cli/include/functionPoint.h" bodystart="40" bodyend="-1"/>
+        <referencedby refid="class_function_point_1a8c383a624d9b2bb1e2c559b6fd8cdfd5" compoundref="function_point_8cpp" startline="25" endline="41">setTechnicalFactors</referencedby>
+        <referencedby refid="class_function_point_1a1e8ea318a3935cade88f4c108ee85a35" compoundref="function_point_8cpp" startline="44" endline="56">getEstimate</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_function_point_1a680fd8472ea86961bb122bc2fa279f4f" prot="protected" static="no" mutable="no">
+        <type>short</type>
+        <definition>short FunctionPoint::trans</definition>
+        <argsstring></argsstring>
+        <name>trans</name>
+        <briefdescription>
+<para>Measure of influence for high transaction rates. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cli/include/functionPoint.h" line="41" column="1" bodyfile="cli/include/functionPoint.h" bodystart="41" bodyend="-1"/>
+        <referencedby refid="class_function_point_1a8c383a624d9b2bb1e2c559b6fd8cdfd5" compoundref="function_point_8cpp" startline="25" endline="41">setTechnicalFactors</referencedby>
+        <referencedby refid="class_function_point_1a1e8ea318a3935cade88f4c108ee85a35" compoundref="function_point_8cpp" startline="44" endline="56">getEstimate</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_function_point_1a05a2ba488218f2550d0fe3d647c5cfc4" prot="protected" static="no" mutable="no">
+        <type>short</type>
+        <definition>short FunctionPoint::entry</definition>
+        <argsstring></argsstring>
+        <name>entry</name>
+        <briefdescription>
+<para>Measure of influence for online data entry. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cli/include/functionPoint.h" line="42" column="1" bodyfile="cli/include/functionPoint.h" bodystart="42" bodyend="-1"/>
+        <referencedby refid="class_function_point_1a8c383a624d9b2bb1e2c559b6fd8cdfd5" compoundref="function_point_8cpp" startline="25" endline="41">setTechnicalFactors</referencedby>
+        <referencedby refid="class_function_point_1a1e8ea318a3935cade88f4c108ee85a35" compoundref="function_point_8cpp" startline="44" endline="56">getEstimate</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_function_point_1a9dc2d45a84678cbaca131b3733ed680c" prot="protected" static="no" mutable="no">
+        <type>short</type>
+        <definition>short FunctionPoint::eff</definition>
+        <argsstring></argsstring>
+        <name>eff</name>
+        <briefdescription>
+<para>Measure of influence for end-user proficiency. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cli/include/functionPoint.h" line="43" column="1" bodyfile="cli/include/functionPoint.h" bodystart="43" bodyend="-1"/>
+        <referencedby refid="class_function_point_1a8c383a624d9b2bb1e2c559b6fd8cdfd5" compoundref="function_point_8cpp" startline="25" endline="41">setTechnicalFactors</referencedby>
+        <referencedby refid="class_function_point_1a1e8ea318a3935cade88f4c108ee85a35" compoundref="function_point_8cpp" startline="44" endline="56">getEstimate</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_function_point_1af92c28fb655cc48346ecc4e13e4f95ef" prot="protected" static="no" mutable="no">
+        <type>short</type>
+        <definition>short FunctionPoint::upd</definition>
+        <argsstring></argsstring>
+        <name>upd</name>
+        <briefdescription>
+<para>Measure of influence for online updating. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cli/include/functionPoint.h" line="44" column="1" bodyfile="cli/include/functionPoint.h" bodystart="44" bodyend="-1"/>
+        <referencedby refid="class_function_point_1a8c383a624d9b2bb1e2c559b6fd8cdfd5" compoundref="function_point_8cpp" startline="25" endline="41">setTechnicalFactors</referencedby>
+        <referencedby refid="class_function_point_1a1e8ea318a3935cade88f4c108ee85a35" compoundref="function_point_8cpp" startline="44" endline="56">getEstimate</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_function_point_1a096d34bfb13d84241bcb8e8be0367af6" prot="protected" static="no" mutable="no">
+        <type>short</type>
+        <definition>short FunctionPoint::comp</definition>
+        <argsstring></argsstring>
+        <name>comp</name>
+        <briefdescription>
+<para>Measure of influence for complex computations. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cli/include/functionPoint.h" line="45" column="1" bodyfile="cli/include/functionPoint.h" bodystart="45" bodyend="-1"/>
+        <referencedby refid="class_function_point_1a8c383a624d9b2bb1e2c559b6fd8cdfd5" compoundref="function_point_8cpp" startline="25" endline="41">setTechnicalFactors</referencedby>
+        <referencedby refid="class_function_point_1a1e8ea318a3935cade88f4c108ee85a35" compoundref="function_point_8cpp" startline="44" endline="56">getEstimate</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_function_point_1aed2a0e55dccbe1a53ed388829b8d56a0" prot="protected" static="no" mutable="no">
+        <type>short</type>
+        <definition>short FunctionPoint::reuse</definition>
+        <argsstring></argsstring>
+        <name>reuse</name>
+        <briefdescription>
+<para>Measure of influence for reusability. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cli/include/functionPoint.h" line="46" column="1" bodyfile="cli/include/functionPoint.h" bodystart="46" bodyend="-1"/>
+        <referencedby refid="class_function_point_1a8c383a624d9b2bb1e2c559b6fd8cdfd5" compoundref="function_point_8cpp" startline="25" endline="41">setTechnicalFactors</referencedby>
+        <referencedby refid="class_function_point_1a1e8ea318a3935cade88f4c108ee85a35" compoundref="function_point_8cpp" startline="44" endline="56">getEstimate</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_function_point_1a4f3ff43500542cb3928abd362f439206" prot="protected" static="no" mutable="no">
+        <type>short</type>
+        <definition>short FunctionPoint::inst</definition>
+        <argsstring></argsstring>
+        <name>inst</name>
+        <briefdescription>
+<para>Measure of influence for ease of installation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cli/include/functionPoint.h" line="47" column="1" bodyfile="cli/include/functionPoint.h" bodystart="47" bodyend="-1"/>
+        <referencedby refid="class_function_point_1a8c383a624d9b2bb1e2c559b6fd8cdfd5" compoundref="function_point_8cpp" startline="25" endline="41">setTechnicalFactors</referencedby>
+        <referencedby refid="class_function_point_1a1e8ea318a3935cade88f4c108ee85a35" compoundref="function_point_8cpp" startline="44" endline="56">getEstimate</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_function_point_1aedd564cd8e7d594adb26b7c131c27fff" prot="protected" static="no" mutable="no">
+        <type>short</type>
+        <definition>short FunctionPoint::oper</definition>
+        <argsstring></argsstring>
+        <name>oper</name>
+        <briefdescription>
+<para>Measure of influence for ease of operation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cli/include/functionPoint.h" line="48" column="1" bodyfile="cli/include/functionPoint.h" bodystart="48" bodyend="-1"/>
+        <referencedby refid="class_function_point_1a8c383a624d9b2bb1e2c559b6fd8cdfd5" compoundref="function_point_8cpp" startline="25" endline="41">setTechnicalFactors</referencedby>
+        <referencedby refid="class_function_point_1a1e8ea318a3935cade88f4c108ee85a35" compoundref="function_point_8cpp" startline="44" endline="56">getEstimate</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_function_point_1a6e506cccd61b824693c293d1771fb95a" prot="protected" static="no" mutable="no">
+        <type>short</type>
+        <definition>short FunctionPoint::port</definition>
+        <argsstring></argsstring>
+        <name>port</name>
+        <briefdescription>
+<para>Measure of influence for portability. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cli/include/functionPoint.h" line="49" column="1" bodyfile="cli/include/functionPoint.h" bodystart="49" bodyend="-1"/>
+        <referencedby refid="class_function_point_1a8c383a624d9b2bb1e2c559b6fd8cdfd5" compoundref="function_point_8cpp" startline="25" endline="41">setTechnicalFactors</referencedby>
+        <referencedby refid="class_function_point_1a1e8ea318a3935cade88f4c108ee85a35" compoundref="function_point_8cpp" startline="44" endline="56">getEstimate</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_function_point_1a34cbc7c5030defbd12d5fda361874bbd" prot="protected" static="no" mutable="no">
+        <type>short</type>
+        <definition>short FunctionPoint::maint</definition>
+        <argsstring></argsstring>
+        <name>maint</name>
+        <briefdescription>
+<para>Measure of influence for maintainability. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cli/include/functionPoint.h" line="50" column="1" bodyfile="cli/include/functionPoint.h" bodystart="50" bodyend="-1"/>
+        <referencedby refid="class_function_point_1a8c383a624d9b2bb1e2c559b6fd8cdfd5" compoundref="function_point_8cpp" startline="25" endline="41">setTechnicalFactors</referencedby>
+        <referencedby refid="class_function_point_1a1e8ea318a3935cade88f4c108ee85a35" compoundref="function_point_8cpp" startline="44" endline="56">getEstimate</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_function_point_1a21c70336de9ae8fca81593abec785f62" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FunctionPoint::FunctionPoint</definition>
+        <argsstring>()=default</argsstring>
+        <name>FunctionPoint</name>
+        <briefdescription>
+<para>Default Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cli/include/functionPoint.h" line="54" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_function_point_1a1e8ea318a3935cade88f4c108ee85a35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float FunctionPoint::getEstimate</definition>
+        <argsstring>()</argsstring>
+        <name>getEstimate</name>
+        <briefdescription>
+<para>Performs function points calculation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cli/include/functionPoint.h" line="56" column="1" bodyfile="cli/src/functionPoint.cpp" bodystart="44" bodyend="56"/>
+        <references refid="class_function_point_1ae7417194ce3ac9e74f03c38db380e2cd" compoundref="function_point_8h" startline="30">nInp</references>
+        <references refid="class_function_point_1a692a9f1bdc74477902d661b11162cda5" compoundref="function_point_8h" startline="17">input</references>
+        <references refid="class_function_point_1acb9ce612aa9550cd72c8252ed240fd0b" compoundref="function_point_8h" startline="24">inp</references>
+        <references refid="class_function_point_1a03abe81b3870db0637b767f3f29f03bf" compoundref="function_point_8h" startline="31">nOut</references>
+        <references refid="class_function_point_1a3c285e075c51371cc9176c1e0cabba3e" compoundref="function_point_8h" startline="18">output</references>
+        <references refid="class_function_point_1a12c50a799960143695394f46c424245c" compoundref="function_point_8h" startline="25">out</references>
+        <references refid="class_function_point_1af6609a51e21dfdc323e25ef29dbb3e77" compoundref="function_point_8h" startline="32">nInq</references>
+        <references refid="class_function_point_1a145d9cd145d9c64c6e9230e6f536de88" compoundref="function_point_8h" startline="19">inquiry</references>
+        <references refid="class_function_point_1a58d390382da9c43a7ff5bab71e13aff9" compoundref="function_point_8h" startline="26">inq</references>
+        <references refid="class_function_point_1affc3a4d27db73a50ae39aa893b6e1898" compoundref="function_point_8h" startline="33">nMaf</references>
+        <references refid="class_function_point_1a9791b5dabd38bbc7227cbea47f5625ae" compoundref="function_point_8h" startline="20">master</references>
+        <references refid="class_function_point_1ac78452e49c07c118ee5bd4c3ebbcf82a" compoundref="function_point_8h" startline="27">maf</references>
+        <references refid="class_function_point_1a4bc020c9ac700c74c4119bee957b8dad" compoundref="function_point_8h" startline="34">nInf</references>
+        <references refid="class_function_point_1a86f8ef6ddaa89845c57a26bad29810f6" compoundref="function_point_8h" startline="21">interface</references>
+        <references refid="class_function_point_1a346f21eefe30cc7b09859bd3c21c32a7" compoundref="function_point_8h" startline="28">inf</references>
+        <references refid="class_function_point_1a2230b051962aeca48215fee473eb125a" compoundref="function_point_8h" startline="37">dcomm</references>
+        <references refid="class_function_point_1a20536cf364d37155f21e3b5aac2e77d2" compoundref="function_point_8h" startline="38">dpro</references>
+        <references refid="class_function_point_1a1b45a52ca52132b64f2ae5cc0255c1ac" compoundref="function_point_8h" startline="39">perf</references>
+        <references refid="class_function_point_1a910446974eef8b8c9158e8948890fd83" compoundref="function_point_8h" startline="40">util</references>
+        <references refid="class_function_point_1a680fd8472ea86961bb122bc2fa279f4f" compoundref="function_point_8h" startline="41">trans</references>
+        <references refid="class_function_point_1a05a2ba488218f2550d0fe3d647c5cfc4" compoundref="function_point_8h" startline="42">entry</references>
+        <references refid="class_function_point_1a9dc2d45a84678cbaca131b3733ed680c" compoundref="function_point_8h" startline="43">eff</references>
+        <references refid="class_function_point_1af92c28fb655cc48346ecc4e13e4f95ef" compoundref="function_point_8h" startline="44">upd</references>
+        <references refid="class_function_point_1a096d34bfb13d84241bcb8e8be0367af6" compoundref="function_point_8h" startline="45">comp</references>
+        <references refid="class_function_point_1aed2a0e55dccbe1a53ed388829b8d56a0" compoundref="function_point_8h" startline="46">reuse</references>
+        <references refid="class_function_point_1a4f3ff43500542cb3928abd362f439206" compoundref="function_point_8h" startline="47">inst</references>
+        <references refid="class_function_point_1aedd564cd8e7d594adb26b7c131c27fff" compoundref="function_point_8h" startline="48">oper</references>
+        <references refid="class_function_point_1a6e506cccd61b824693c293d1771fb95a" compoundref="function_point_8h" startline="49">port</references>
+        <references refid="class_function_point_1a34cbc7c5030defbd12d5fda361874bbd" compoundref="function_point_8h" startline="50">maint</references>
+        <referencedby refid="main_8cpp_1a8b4bd412c84a795e8ac3ffe4445ac64b" compoundref="main_8cpp" startline="46" endline="106">FunctionPointHelper</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_function_point_1a595bd9d315ed2f798de1d8de1b351516" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FunctionPoint::setComplexities</definition>
+        <argsstring>(short inp, short out, short inq, short maf, short inf)</argsstring>
+        <name>setComplexities</name>
+        <param>
+          <type>short</type>
+          <declname>inp</declname>
+        </param>
+        <param>
+          <type>short</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>short</type>
+          <declname>inq</declname>
+        </param>
+        <param>
+          <type>short</type>
+          <declname>maf</declname>
+        </param>
+        <param>
+          <type>short</type>
+          <declname>inf</declname>
+        </param>
+        <briefdescription>
+<para>A mutator for complexities. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cli/include/functionPoint.h" line="58" column="1" bodyfile="cli/src/functionPoint.cpp" bodystart="6" bodyend="13"/>
+        <references refid="class_function_point_1acb9ce612aa9550cd72c8252ed240fd0b" compoundref="function_point_8h" startline="24">inp</references>
+        <references refid="class_function_point_1a12c50a799960143695394f46c424245c" compoundref="function_point_8h" startline="25">out</references>
+        <references refid="class_function_point_1a58d390382da9c43a7ff5bab71e13aff9" compoundref="function_point_8h" startline="26">inq</references>
+        <references refid="class_function_point_1ac78452e49c07c118ee5bd4c3ebbcf82a" compoundref="function_point_8h" startline="27">maf</references>
+        <references refid="class_function_point_1a346f21eefe30cc7b09859bd3c21c32a7" compoundref="function_point_8h" startline="28">inf</references>
+        <referencedby refid="main_8cpp_1a8b4bd412c84a795e8ac3ffe4445ac64b" compoundref="main_8cpp" startline="46" endline="106">FunctionPointHelper</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_function_point_1a8f59608826f3c64524033ccbb0cddb6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FunctionPoint::setComponents</definition>
+        <argsstring>(int nInp, int nOut, int nInq, int nMaf, int nInf)</argsstring>
+        <name>setComponents</name>
+        <param>
+          <type>int</type>
+          <declname>nInp</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nOut</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nInq</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nMaf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nInf</declname>
+        </param>
+        <briefdescription>
+<para>A mutator for components for Unadjusted Function Points (UFP) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cli/include/functionPoint.h" line="60" column="1" bodyfile="cli/src/functionPoint.cpp" bodystart="16" bodyend="22"/>
+        <references refid="class_function_point_1ae7417194ce3ac9e74f03c38db380e2cd" compoundref="function_point_8h" startline="30">nInp</references>
+        <references refid="class_function_point_1a03abe81b3870db0637b767f3f29f03bf" compoundref="function_point_8h" startline="31">nOut</references>
+        <references refid="class_function_point_1af6609a51e21dfdc323e25ef29dbb3e77" compoundref="function_point_8h" startline="32">nInq</references>
+        <references refid="class_function_point_1affc3a4d27db73a50ae39aa893b6e1898" compoundref="function_point_8h" startline="33">nMaf</references>
+        <references refid="class_function_point_1a4bc020c9ac700c74c4119bee957b8dad" compoundref="function_point_8h" startline="34">nInf</references>
+        <referencedby refid="main_8cpp_1a8b4bd412c84a795e8ac3ffe4445ac64b" compoundref="main_8cpp" startline="46" endline="106">FunctionPointHelper</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_function_point_1a8c383a624d9b2bb1e2c559b6fd8cdfd5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FunctionPoint::setTechnicalFactors</definition>
+        <argsstring>(int dcomm, int dpro, int perf, int util, int trans, int entry, int eff, int upd, int comp, int reuse, int inst, int oper, int port, int maint)</argsstring>
+        <name>setTechnicalFactors</name>
+        <param>
+          <type>int</type>
+          <declname>dcomm</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dpro</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>perf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>util</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>trans</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>entry</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>eff</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>upd</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>comp</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>reuse</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>inst</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>oper</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>port</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>maint</declname>
+        </param>
+        <briefdescription>
+<para>A mutator for factors for Degree of Influence (DI) and Technical Complexity Factors (TCF) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cli/include/functionPoint.h" line="62" column="1" bodyfile="cli/src/functionPoint.cpp" bodystart="25" bodyend="41"/>
+        <references refid="class_function_point_1a2230b051962aeca48215fee473eb125a" compoundref="function_point_8h" startline="37">dcomm</references>
+        <references refid="class_function_point_1a20536cf364d37155f21e3b5aac2e77d2" compoundref="function_point_8h" startline="38">dpro</references>
+        <references refid="class_function_point_1a1b45a52ca52132b64f2ae5cc0255c1ac" compoundref="function_point_8h" startline="39">perf</references>
+        <references refid="class_function_point_1a910446974eef8b8c9158e8948890fd83" compoundref="function_point_8h" startline="40">util</references>
+        <references refid="class_function_point_1a680fd8472ea86961bb122bc2fa279f4f" compoundref="function_point_8h" startline="41">trans</references>
+        <references refid="class_function_point_1a05a2ba488218f2550d0fe3d647c5cfc4" compoundref="function_point_8h" startline="42">entry</references>
+        <references refid="class_function_point_1a9dc2d45a84678cbaca131b3733ed680c" compoundref="function_point_8h" startline="43">eff</references>
+        <references refid="class_function_point_1af92c28fb655cc48346ecc4e13e4f95ef" compoundref="function_point_8h" startline="44">upd</references>
+        <references refid="class_function_point_1a096d34bfb13d84241bcb8e8be0367af6" compoundref="function_point_8h" startline="45">comp</references>
+        <references refid="class_function_point_1aed2a0e55dccbe1a53ed388829b8d56a0" compoundref="function_point_8h" startline="46">reuse</references>
+        <references refid="class_function_point_1a4f3ff43500542cb3928abd362f439206" compoundref="function_point_8h" startline="47">inst</references>
+        <references refid="class_function_point_1aedd564cd8e7d594adb26b7c131c27fff" compoundref="function_point_8h" startline="48">oper</references>
+        <references refid="class_function_point_1a6e506cccd61b824693c293d1771fb95a" compoundref="function_point_8h" startline="49">port</references>
+        <references refid="class_function_point_1a34cbc7c5030defbd12d5fda361874bbd" compoundref="function_point_8h" startline="50">maint</references>
+        <referencedby refid="main_8cpp_1a8b4bd412c84a795e8ac3ffe4445ac64b" compoundref="main_8cpp" startline="46" endline="106">FunctionPointHelper</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The Function Point Class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Calculates Complexity based on the following: number of functions to be implemented, complexity of each function, and function type. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>FunctionPoint</label>
+        <link refid="class_function_point"/>
+      </node>
+    </collaborationgraph>
+    <location file="cli/include/functionPoint.h" line="14" column="1" bodyfile="cli/include/functionPoint.h" bodystart="14" bodyend="64"/>
+    <listofallmembers>
+      <member refid="class_function_point_1a096d34bfb13d84241bcb8e8be0367af6" prot="protected" virt="non-virtual"><scope>FunctionPoint</scope><name>comp</name></member>
+      <member refid="class_function_point_1a2230b051962aeca48215fee473eb125a" prot="protected" virt="non-virtual"><scope>FunctionPoint</scope><name>dcomm</name></member>
+      <member refid="class_function_point_1a20536cf364d37155f21e3b5aac2e77d2" prot="protected" virt="non-virtual"><scope>FunctionPoint</scope><name>dpro</name></member>
+      <member refid="class_function_point_1a9dc2d45a84678cbaca131b3733ed680c" prot="protected" virt="non-virtual"><scope>FunctionPoint</scope><name>eff</name></member>
+      <member refid="class_function_point_1a05a2ba488218f2550d0fe3d647c5cfc4" prot="protected" virt="non-virtual"><scope>FunctionPoint</scope><name>entry</name></member>
+      <member refid="class_function_point_1a21c70336de9ae8fca81593abec785f62" prot="public" virt="non-virtual"><scope>FunctionPoint</scope><name>FunctionPoint</name></member>
+      <member refid="class_function_point_1a1e8ea318a3935cade88f4c108ee85a35" prot="public" virt="non-virtual"><scope>FunctionPoint</scope><name>getEstimate</name></member>
+      <member refid="class_function_point_1a346f21eefe30cc7b09859bd3c21c32a7" prot="protected" virt="non-virtual"><scope>FunctionPoint</scope><name>inf</name></member>
+      <member refid="class_function_point_1acb9ce612aa9550cd72c8252ed240fd0b" prot="protected" virt="non-virtual"><scope>FunctionPoint</scope><name>inp</name></member>
+      <member refid="class_function_point_1a692a9f1bdc74477902d661b11162cda5" prot="protected" virt="non-virtual"><scope>FunctionPoint</scope><name>input</name></member>
+      <member refid="class_function_point_1a58d390382da9c43a7ff5bab71e13aff9" prot="protected" virt="non-virtual"><scope>FunctionPoint</scope><name>inq</name></member>
+      <member refid="class_function_point_1a145d9cd145d9c64c6e9230e6f536de88" prot="protected" virt="non-virtual"><scope>FunctionPoint</scope><name>inquiry</name></member>
+      <member refid="class_function_point_1a4f3ff43500542cb3928abd362f439206" prot="protected" virt="non-virtual"><scope>FunctionPoint</scope><name>inst</name></member>
+      <member refid="class_function_point_1a86f8ef6ddaa89845c57a26bad29810f6" prot="protected" virt="non-virtual"><scope>FunctionPoint</scope><name>interface</name></member>
+      <member refid="class_function_point_1ac78452e49c07c118ee5bd4c3ebbcf82a" prot="protected" virt="non-virtual"><scope>FunctionPoint</scope><name>maf</name></member>
+      <member refid="class_function_point_1a34cbc7c5030defbd12d5fda361874bbd" prot="protected" virt="non-virtual"><scope>FunctionPoint</scope><name>maint</name></member>
+      <member refid="class_function_point_1a9791b5dabd38bbc7227cbea47f5625ae" prot="protected" virt="non-virtual"><scope>FunctionPoint</scope><name>master</name></member>
+      <member refid="class_function_point_1a4bc020c9ac700c74c4119bee957b8dad" prot="protected" virt="non-virtual"><scope>FunctionPoint</scope><name>nInf</name></member>
+      <member refid="class_function_point_1ae7417194ce3ac9e74f03c38db380e2cd" prot="protected" virt="non-virtual"><scope>FunctionPoint</scope><name>nInp</name></member>
+      <member refid="class_function_point_1af6609a51e21dfdc323e25ef29dbb3e77" prot="protected" virt="non-virtual"><scope>FunctionPoint</scope><name>nInq</name></member>
+      <member refid="class_function_point_1affc3a4d27db73a50ae39aa893b6e1898" prot="protected" virt="non-virtual"><scope>FunctionPoint</scope><name>nMaf</name></member>
+      <member refid="class_function_point_1a03abe81b3870db0637b767f3f29f03bf" prot="protected" virt="non-virtual"><scope>FunctionPoint</scope><name>nOut</name></member>
+      <member refid="class_function_point_1aedd564cd8e7d594adb26b7c131c27fff" prot="protected" virt="non-virtual"><scope>FunctionPoint</scope><name>oper</name></member>
+      <member refid="class_function_point_1a12c50a799960143695394f46c424245c" prot="protected" virt="non-virtual"><scope>FunctionPoint</scope><name>out</name></member>
+      <member refid="class_function_point_1a3c285e075c51371cc9176c1e0cabba3e" prot="protected" virt="non-virtual"><scope>FunctionPoint</scope><name>output</name></member>
+      <member refid="class_function_point_1a1b45a52ca52132b64f2ae5cc0255c1ac" prot="protected" virt="non-virtual"><scope>FunctionPoint</scope><name>perf</name></member>
+      <member refid="class_function_point_1a6e506cccd61b824693c293d1771fb95a" prot="protected" virt="non-virtual"><scope>FunctionPoint</scope><name>port</name></member>
+      <member refid="class_function_point_1aed2a0e55dccbe1a53ed388829b8d56a0" prot="protected" virt="non-virtual"><scope>FunctionPoint</scope><name>reuse</name></member>
+      <member refid="class_function_point_1a595bd9d315ed2f798de1d8de1b351516" prot="public" virt="non-virtual"><scope>FunctionPoint</scope><name>setComplexities</name></member>
+      <member refid="class_function_point_1a8f59608826f3c64524033ccbb0cddb6d" prot="public" virt="non-virtual"><scope>FunctionPoint</scope><name>setComponents</name></member>
+      <member refid="class_function_point_1a8c383a624d9b2bb1e2c559b6fd8cdfd5" prot="public" virt="non-virtual"><scope>FunctionPoint</scope><name>setTechnicalFactors</name></member>
+      <member refid="class_function_point_1a680fd8472ea86961bb122bc2fa279f4f" prot="protected" virt="non-virtual"><scope>FunctionPoint</scope><name>trans</name></member>
+      <member refid="class_function_point_1af92c28fb655cc48346ecc4e13e4f95ef" prot="protected" virt="non-virtual"><scope>FunctionPoint</scope><name>upd</name></member>
+      <member refid="class_function_point_1a910446974eef8b8c9158e8948890fd83" prot="protected" virt="non-virtual"><scope>FunctionPoint</scope><name>util</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

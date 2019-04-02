@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="_r_e_a_d_m_e_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>Time<sp/>Cost<sp/>Analysis</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Estimates<sp/>cost<sp/>in<sp/>time<sp/>for<sp/>software<sp/>development<sp/>using<sp/>either<sp/>Function<sp/>Points,<sp/>Basic<sp/>COCOMO,<sp/>or<sp/>Intermediate<sp/>COCOMO.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Function<sp/>Points</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>Algorithm</highlight></codeline>
+<codeline><highlight class="normal">N<sp/>=<sp/>number<sp/>of<sp/>that<sp/>type<sp/>of<sp/>component</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">C<sp/>=<sp/>component<sp/>complexity<sp/>value</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">I<sp/>=<sp/>influence<sp/>value</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Unadjusted<sp/>Function<sp/>Points<sp/>(UFP)<sp/>=<sp/>(N0<sp/>x<sp/>C0)<sp/>+<sp/>(N1<sp/>x<sp/>C1)<sp/>+<sp/>(N2<sp/>x<sp/>C2)...</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Degree<sp/>of<sp/>Influence<sp/>(DI)<sp/>=<sp/>I0<sp/>+<sp/>I1<sp/>+<sp/>I2<sp/>+<sp/>...<sp/>+<sp/>I14</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Technical<sp/>Complexity<sp/>Factor<sp/>(TCF)<sp/>=<sp/>0.65<sp/>+<sp/>(0.01<sp/>x<sp/>DI)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Adjusted<sp/>Function<sp/>Points<sp/>(FP)=<sp/>UFP<sp/>x<sp/>TCF</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>Component<sp/>Complexities</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Component<sp/>|<sp/>Simple<sp/>|<sp/>Average<sp/>|<sp/>Complex<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>-----------<sp/>|<sp/>-<sp/>|<sp/>-<sp/>|<sp/>-<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Input<sp/>item<sp/>|<sp/>3<sp/>|<sp/>4<sp/>|<sp/>6<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Output<sp/>item<sp/>|<sp/>4<sp/>|<sp/>5<sp/>|<sp/>7<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Inquiry<sp/>|<sp/>3<sp/>|<sp/>4<sp/>|<sp/>6<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Master<sp/>file<sp/>|<sp/>7<sp/>|<sp/>10<sp/>|<sp/>15<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Interface<sp/>|<sp/>5<sp/>|<sp/>7<sp/>|<sp/>10<sp/>|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>Technical<sp/>Factors</highlight></codeline>
+<codeline><highlight class="normal">These<sp/>are<sp/>used<sp/>for<sp/>degrees<sp/>of<sp/>influence<sp/>and<sp/>range<sp/>from<sp/>values<sp/>0<sp/>for<sp/>no<sp/>influence<sp/>to<sp/>5<sp/>for<sp/>strong<sp/>influence</highlight></codeline>
+<codeline><highlight class="normal">1.<sp/>Data<sp/>communication</highlight></codeline>
+<codeline><highlight class="normal">2.<sp/>Distributed<sp/>data<sp/>processing</highlight></codeline>
+<codeline><highlight class="normal">3.<sp/>Performance<sp/>criteria</highlight></codeline>
+<codeline><highlight class="normal">4.<sp/>Heavily<sp/>utilized<sp/>hardware</highlight></codeline>
+<codeline><highlight class="normal">5.<sp/>High<sp/>transaction<sp/>rates</highlight></codeline>
+<codeline><highlight class="normal">6.<sp/>Online<sp/>data<sp/>entry</highlight></codeline>
+<codeline><highlight class="normal">7.<sp/>End-user<sp/>efficiency</highlight></codeline>
+<codeline><highlight class="normal">8.<sp/>Online<sp/>updating</highlight></codeline>
+<codeline><highlight class="normal">9.<sp/>Complex<sp/>computations</highlight></codeline>
+<codeline><highlight class="normal">10.<sp/>Reusability</highlight></codeline>
+<codeline><highlight class="normal">11.<sp/>Ease<sp/>of<sp/>installation</highlight></codeline>
+<codeline><highlight class="normal">12.<sp/>Ease<sp/>of<sp/>operation</highlight></codeline>
+<codeline><highlight class="normal">13.<sp/>Portability</highlight></codeline>
+<codeline><highlight class="normal">14.<sp/>Maintainability</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Basic<sp/>COCOMO</highlight></codeline>
+<codeline><highlight class="normal">####<sp/>Algorithm</highlight></codeline>
+<codeline><highlight class="normal">KDSI<sp/>=<sp/>estimated<sp/>lines<sp/>of<sp/>code<sp/>in<sp/>thousands</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">A<sp/>and<sp/>B<sp/>are<sp/>constants<sp/>given<sp/>by<sp/>project<sp/>size.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Person-Months<sp/>=<sp/>A<sp/>x<sp/>KDSI<sp/>&lt;sup&gt;B&lt;/sup&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>Project<sp/>Complexity<sp/>Constants</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Type<sp/>|<sp/>Size<sp/>|<sp/>A<sp/>|<sp/>B<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>-------------<sp/>|<sp/>--------<sp/>|<sp/>---<sp/>|<sp/>----<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Organic<sp/>|<sp/>Small<sp/>|<sp/>2.4<sp/>|<sp/>1.05<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Semi-detached<sp/>|<sp/>Medium<sp/>|<sp/>3.0<sp/>|<sp/>1.12<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Embedded<sp/>|<sp/>Complex<sp/>|<sp/>3.6<sp/>|<sp/>1.20<sp/>|</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Intermediate<sp/>COCOMO</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>Algorithm</highlight></codeline>
+<codeline><highlight class="normal">KDSI<sp/>=<sp/>estimated<sp/>lines<sp/>of<sp/>code<sp/>in<sp/>thousands</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">A<sp/>and<sp/>B<sp/>are<sp/>constants<sp/>given<sp/>by<sp/>project<sp/>size.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Person-Months<sp/>(basic)<sp/>=<sp/>A<sp/>x<sp/>KDSI<sp/>&lt;sup&gt;B&lt;/sup&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">C<sp/>=<sp/>cost<sp/>driver<sp/>complexity<sp/>score</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Cost<sp/>Driver<sp/>Total<sp/>=<sp/>C0<sp/>*<sp/>C1<sp/>*<sp/>C2<sp/>*<sp/>...<sp/>*<sp/>C14</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Person-Months<sp/>(intermediate)<sp/>=<sp/>Person-Months<sp/>(basic)<sp/>x<sp/>Cost<sp/>Driver<sp/>Total</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>Project<sp/>Complexity<sp/>Constants</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Type<sp/>|<sp/>Size<sp/>|<sp/>A<sp/>|<sp/>B<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>-------------<sp/>|<sp/>--------<sp/>|<sp/>---<sp/>|<sp/>----<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Organic<sp/>|<sp/>Small<sp/>|<sp/>3.2<sp/>|<sp/>1.05<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Semi-detached<sp/>|<sp/>Medium<sp/>|<sp/>3.0<sp/>|<sp/>1.12<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Embedded<sp/>|<sp/>Complex<sp/>|<sp/>2.8<sp/>|<sp/>1.20<sp/>|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>Cost<sp/>Drivers</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Cost<sp/>Driver<sp/>|<sp/>Very<sp/>Low<sp/>|<sp/>Low<sp/>|<sp/>Nominal<sp/>|<sp/>High<sp/>|<sp/>Very<sp/>High<sp/>|<sp/>Extra<sp/>High<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>-----------------------------------<sp/>|<sp/>----<sp/>|<sp/>----<sp/>|<sp/>----<sp/>|<sp/>----<sp/>|<sp/>----<sp/>|<sp/>----<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Required<sp/>software<sp/>reliability<sp/>|<sp/>0.75<sp/>|<sp/>0.88<sp/>|<sp/>1.00<sp/>|<sp/>1.15<sp/>|<sp/>1.40<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Database<sp/>size<sp/>|<sp/>|<sp/>0.94<sp/>|<sp/>1.00<sp/>|<sp/>1.08<sp/>|<sp/>1.16<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Product<sp/>complexity<sp/>|<sp/>0.70<sp/>|<sp/>0.85<sp/>|<sp/>1.00<sp/>|<sp/>1.15<sp/>|<sp/>1.30<sp/>|<sp/>1.65<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Execution<sp/>time<sp/>constraint<sp/>|<sp/>|<sp/>|<sp/>1.00<sp/>|<sp/>1.11<sp/>|<sp/>1.30<sp/>|<sp/>1.66<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Main<sp/>storage<sp/>constraint<sp/>|<sp/>|<sp/>|<sp/>1.00<sp/>|<sp/>1.06<sp/>|<sp/>1.21<sp/>|<sp/>1.56<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Virtual<sp/>machine<sp/>volatility<sp/>|<sp/>|<sp/>0.87<sp/>|<sp/>1.00<sp/>|<sp/>1.15<sp/>|<sp/>1.30<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Computer<sp/>turnaround<sp/>time<sp/>|<sp/>|<sp/>0.87<sp/>|<sp/>1.00<sp/>|<sp/>1.07<sp/>|<sp/>1.15<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Analyst<sp/>capabilities<sp/>|<sp/>1.46<sp/>|<sp/>1.19<sp/>|<sp/>1.00<sp/>|<sp/>0.86<sp/>|<sp/>0.71<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Applications<sp/>experience<sp/>|<sp/>1.29<sp/>|<sp/>1.13<sp/>|<sp/>1.00<sp/>|<sp/>0.91<sp/>|<sp/>0.82<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Programmer<sp/>capability<sp/>|<sp/>1.42<sp/>|<sp/>1.17<sp/>|<sp/>1.00<sp/>|<sp/>0.86<sp/>|<sp/>0.70<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Virtual<sp/>machine<sp/>experience<sp/>|<sp/>1.21<sp/>|<sp/>1.10<sp/>|<sp/>1.00<sp/>|<sp/>0.90<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Programming<sp/>language<sp/>experience<sp/>|<sp/>1.14<sp/>|<sp/>1.07<sp/>|<sp/>1.00<sp/>|<sp/>0.95<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Use<sp/>of<sp/>modern<sp/>programming<sp/>practices<sp/>|<sp/>1.24<sp/>|<sp/>1.10<sp/>|<sp/>1.00<sp/>|<sp/>0.91<sp/>|<sp/>0.82<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Use<sp/>of<sp/>software<sp/>tools<sp/>|<sp/>1.24<sp/>|<sp/>1.10<sp/>|<sp/>1.00<sp/>|<sp/>0.91<sp/>|<sp/>0.83<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>Required<sp/>development<sp/>schedule<sp/>|<sp/>1.23<sp/>|<sp/>1.08<sp/>|<sp/>1.00<sp/>|<sp/>1.04<sp/>|<sp/>1.10<sp/>|</highlight></codeline>
+    </programlisting>
+    <location file="README.md"/>
+  </compounddef>
+</doxygen>

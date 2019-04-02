@@ -1,0 +1,8 @@
+<map id="COCOMOHelper" name="COCOMOHelper">
+<area shape="rect" id="node1" title="Logic controller for basic and intermediate COCOMO." alt="" coords="5,107,124,133"/>
+<area shape="rect" id="node2" href="$class_c_o_c_o_m_o.html#a4bf94bae58329f98ef1cf080ec4c2f8c" title="A mutator for a and b." alt="" coords="175,5,342,32"/>
+<area shape="rect" id="node3" href="$class_c_o_c_o_m_o.html#a09f36eda3f22f513822a7cdb09ac91a1" title="A mutator for the estimated thousand lines of code." alt="" coords="190,56,327,83"/>
+<area shape="rect" id="node4" href="$class_c_o_c_o_m_o.html#a0011140084bc7d1787396d33ea52b232" title="A mutator for costDrivers[]." alt="" coords="172,107,345,133"/>
+<area shape="rect" id="node5" href="$class_c_o_c_o_m_o.html#a2fc6b577fc892f9d39f0c9b80921de56" title="Initializes all costDriver values to the semi&#45;detached values." alt="" coords="173,157,345,184"/>
+<area shape="rect" id="node6" href="$class_c_o_c_o_m_o.html#a1fc0ead0690cbfa98aa0064af26e8600" title="Performs COCOMO calculations." alt="" coords="179,208,338,235"/>
+</map>

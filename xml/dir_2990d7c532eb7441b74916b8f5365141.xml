@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="dir_2990d7c532eb7441b74916b8f5365141" kind="dir">
+    <compoundname>cli</compoundname>
+    <innerdir refid="dir_cde9ee1e1149a294439eb6a6d22bd3a6">cli/include</innerdir>
+    <innerdir refid="dir_79b6dccc634a0e640565b87a866d8ba9">cli/src</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="cli/"/>
+  </compounddef>
+</doxygen>

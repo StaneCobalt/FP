@@ -1,0 +1,7 @@
+<map id="FunctionPointHelper" name="FunctionPointHelper">
+<area shape="rect" id="node1" title="Logic controller for Function Points." alt="" coords="5,85,144,112"/>
+<area shape="rect" id="node2" href="$class_function_point.html#a595bd9d315ed2f798de1d8de1b351516" title="A mutator for complexities." alt="" coords="192,5,395,32"/>
+<area shape="rect" id="node3" href="$class_function_point.html#a8f59608826f3c64524033ccbb0cddb6d" title="A mutator for components for Unadjusted Function Points (UFP)" alt="" coords="193,56,394,83"/>
+<area shape="rect" id="node4" href="$class_function_point.html#a8c383a624d9b2bb1e2c559b6fd8cdfd5" title="A mutator for factors for Degree of Influence (DI) and Technical Complexity Factors (TCF)" alt="" coords="202,107,385,149"/>
+<area shape="rect" id="node5" href="$class_function_point.html#a1e8ea318a3935cade88f4c108ee85a35" title="Performs function points calculation." alt="" coords="203,173,383,200"/>
+</map>

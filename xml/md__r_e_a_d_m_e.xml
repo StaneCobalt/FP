@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="md__r_e_a_d_m_e" kind="page">
+    <compoundname>md_README</compoundname>
+    <title>Time Cost Analysis</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Estimates cost in time for software development using either Function Points, Basic <ref refid="class_c_o_c_o_m_o" kindref="compound">COCOMO</ref>, or Intermediate <ref refid="class_c_o_c_o_m_o" kindref="compound">COCOMO</ref>.</para>
+<para><heading level="2">Function Points</heading>
+</para>
+<para><heading level="4">Algorithm</heading>
+</para>
+<para>N = number of that type of component</para>
+<para>C = component complexity value</para>
+<para>I = influence value</para>
+<para>Unadjusted Function Points (UFP) = (N0 x C0) + (N1 x C1) + (N2 x C2)...</para>
+<para>Degree of Influence (DI) = I0 + I1 + I2 + ... + I14</para>
+<para>Technical Complexity Factor (TCF) = 0.65 + (0.01 x DI)</para>
+<para>Adjusted Function Points (FP)= UFP x TCF</para>
+<para><heading level="4">Component Complexities</heading>
+</para>
+<para><table rows="6" cols="4"><row>
+<entry thead="yes"><para>Component  </para>
+</entry><entry thead="yes"><para>Simple  </para>
+</entry><entry thead="yes"><para>Average  </para>
+</entry><entry thead="yes"><para>Complex   </para>
+</entry></row>
+<row>
+<entry thead="no"><para>Input item  </para>
+</entry><entry thead="no"><para>3  </para>
+</entry><entry thead="no"><para>4  </para>
+</entry><entry thead="no"><para>6   </para>
+</entry></row>
+<row>
+<entry thead="no"><para>Output item  </para>
+</entry><entry thead="no"><para>4  </para>
+</entry><entry thead="no"><para>5  </para>
+</entry><entry thead="no"><para>7   </para>
+</entry></row>
+<row>
+<entry thead="no"><para>Inquiry  </para>
+</entry><entry thead="no"><para>3  </para>
+</entry><entry thead="no"><para>4  </para>
+</entry><entry thead="no"><para>6   </para>
+</entry></row>
+<row>
+<entry thead="no"><para>Master file  </para>
+</entry><entry thead="no"><para>7  </para>
+</entry><entry thead="no"><para>10  </para>
+</entry><entry thead="no"><para>15   </para>
+</entry></row>
+<row>
+<entry thead="no"><para>Interface  </para>
+</entry><entry thead="no"><para>5  </para>
+</entry><entry thead="no"><para>7  </para>
+</entry><entry thead="no"><para>10   </para>
+</entry></row>
+</table>
+</para>
+<para><heading level="4">Technical Factors</heading>
+</para>
+<para>These are used for degrees of influence and range from values 0 for no influence to 5 for strong influence<orderedlist>
+<listitem><para>Data communication</para>
+</listitem><listitem><para>Distributed data processing</para>
+</listitem><listitem><para>Performance criteria</para>
+</listitem><listitem><para>Heavily utilized hardware</para>
+</listitem><listitem><para>High transaction rates</para>
+</listitem><listitem><para>Online data entry</para>
+</listitem><listitem><para>End-user efficiency</para>
+</listitem><listitem><para>Online updating</para>
+</listitem><listitem><para>Complex computations</para>
+</listitem><listitem><para>Reusability</para>
+</listitem><listitem><para>Ease of installation</para>
+</listitem><listitem><para>Ease of operation</para>
+</listitem><listitem><para>Portability</para>
+</listitem><listitem><para>Maintainability</para>
+</listitem></orderedlist>
+</para>
+<para><heading level="2">Basic <ref refid="class_c_o_c_o_m_o" kindref="compound">COCOMO</ref></heading>
+</para>
+<para><heading level="4">Algorithm</heading>
+</para>
+<para>KDSI = estimated lines of code in thousands</para>
+<para>A and B are constants given by project size.</para>
+<para>Person-Months = A x KDSI <superscript>B</superscript></para>
+<para><heading level="4">Project Complexity Constants</heading>
+</para>
+<para><table rows="4" cols="4"><row>
+<entry thead="yes"><para>Type  </para>
+</entry><entry thead="yes"><para>Size  </para>
+</entry><entry thead="yes"><para>A  </para>
+</entry><entry thead="yes"><para>B   </para>
+</entry></row>
+<row>
+<entry thead="no"><para>Organic  </para>
+</entry><entry thead="no"><para>Small  </para>
+</entry><entry thead="no"><para>2.4  </para>
+</entry><entry thead="no"><para>1.05   </para>
+</entry></row>
+<row>
+<entry thead="no"><para>Semi-detached  </para>
+</entry><entry thead="no"><para>Medium  </para>
+</entry><entry thead="no"><para>3.0  </para>
+</entry><entry thead="no"><para>1.12   </para>
+</entry></row>
+<row>
+<entry thead="no"><para>Embedded  </para>
+</entry><entry thead="no"><para>Complex  </para>
+</entry><entry thead="no"><para>3.6  </para>
+</entry><entry thead="no"><para>1.20   </para>
+</entry></row>
+</table>
+</para>
+<para><heading level="2">Intermediate <ref refid="class_c_o_c_o_m_o" kindref="compound">COCOMO</ref></heading>
+</para>
+<para><heading level="4">Algorithm</heading>
+</para>
+<para>KDSI = estimated lines of code in thousands</para>
+<para>A and B are constants given by project size.</para>
+<para>Person-Months (basic) = A x KDSI <superscript>B</superscript></para>
+<para>C = cost driver complexity score</para>
+<para>Cost Driver Total = C0 * C1 * C2 * ... * C14</para>
+<para>Person-Months (intermediate) = Person-Months (basic) x Cost Driver Total</para>
+<para><heading level="4">Project Complexity Constants</heading>
+</para>
+<para><table rows="4" cols="4"><row>
+<entry thead="yes"><para>Type  </para>
+</entry><entry thead="yes"><para>Size  </para>
+</entry><entry thead="yes"><para>A  </para>
+</entry><entry thead="yes"><para>B   </para>
+</entry></row>
+<row>
+<entry thead="no"><para>Organic  </para>
+</entry><entry thead="no"><para>Small  </para>
+</entry><entry thead="no"><para>3.2  </para>
+</entry><entry thead="no"><para>1.05   </para>
+</entry></row>
+<row>
+<entry thead="no"><para>Semi-detached  </para>
+</entry><entry thead="no"><para>Medium  </para>
+</entry><entry thead="no"><para>3.0  </para>
+</entry><entry thead="no"><para>1.12   </para>
+</entry></row>
+<row>
+<entry thead="no"><para>Embedded  </para>
+</entry><entry thead="no"><para>Complex  </para>
+</entry><entry thead="no"><para>2.8  </para>
+</entry><entry thead="no"><para>1.20   </para>
+</entry></row>
+</table>
+</para>
+<para><heading level="4">Cost Drivers</heading>
+</para>
+<para>| Cost Driver | Very Low | Low | Nominal | High | Very High | Extra High | | --------------------------------<mdash/> | -<mdash/> | -<mdash/> | -<mdash/> | -<mdash/> | -<mdash/> | -<mdash/> | | Required software reliability | 0.75 | 0.88 | 1.00 | 1.15 | 1.40 | | Database size | | 0.94 | 1.00 | 1.08 | 1.16 | | Product complexity | 0.70 | 0.85 | 1.00 | 1.15 | 1.30 | 1.65 | | Execution time constraint | | | 1.00 | 1.11 | 1.30 | 1.66 | | Main storage constraint | | | 1.00 | 1.06 | 1.21 | 1.56 | | Virtual machine volatility | | 0.87 | 1.00 | 1.15 | 1.30 | | Computer turnaround time | | 0.87 | 1.00 | 1.07 | 1.15 | | Analyst capabilities | 1.46 | 1.19 | 1.00 | 0.86 | 0.71 | | Applications experience | 1.29 | 1.13 | 1.00 | 0.91 | 0.82 | | Programmer capability | 1.42 | 1.17 | 1.00 | 0.86 | 0.70 | | Virtual machine experience | 1.21 | 1.10 | 1.00 | 0.90 | | Programming language experience | 1.14 | 1.07 | 1.00 | 0.95 | | Use of modern programming practices | 1.24 | 1.10 | 1.00 | 0.91 | 0.82 | | Use of software tools | 1.24 | 1.10 | 1.00 | 0.91 | 0.83 | | Required development schedule | 1.23 | 1.08 | 1.00 | 1.04 | 1.10 | </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>
