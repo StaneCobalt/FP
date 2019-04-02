@@ -2,7 +2,32 @@
 
 Estimates cost in time for software development using either Function Points, Basic COCOMO, or Intermediate COCOMO.
 
-## Function Points
+<details>
+  <summary>### CLI</summary>
+
+The cli version is built in C++.
+To view the documentation for it [click here](https://stanecobalt.github.io/TCA/html/)
+
+#### How to Use
+
+- To run the program just open up a command line and run `make all`
+- Then run `tca.exe`
+- Note that you will need to have [make](https://www.gnu.org/software/make/) and [gcc](https://gcc.gnu.org/) installed.
+If you're on Windows, I recommend using [MinGW](https://nuwen.net/).
+</details>
+
+<details>
+  <summary>### Web</summary>
+
+The web version is built in JavaScript and is much easier to use since it has a GUI.
+
+#### How to Use
+
+To use the web version, you can simply [click here](https://stanecobalt.github.io/TCA/web/) and start using it immediately inside of your browser.
+</details>
+
+<details>
+  <summary>## Function Points</summary>
 
 #### Algorithm
 N = number of that type of component
@@ -44,8 +69,12 @@ These are used for degrees of influence and range from values 0 for no influence
 12. Ease of operation
 13. Portability
 14. Maintainability
+</details>
 
-## Basic COCOMO
+<details>
+  <summary>## COCOMO</summary>
+
+### Basic COCOMO
 #### Algorithm
 KDSI = estimated lines of code in thousands
 
@@ -61,7 +90,7 @@ Person-Months = A x KDSI <sup>B</sup>
 | Embedded | Complex | 3.6 | 1.20 |
 
 
-## Intermediate COCOMO
+### Intermediate COCOMO
 
 #### Algorithm
 KDSI = estimated lines of code in thousands
@@ -101,3 +130,5 @@ Person-Months (intermediate) = Person-Months (basic) x Cost Driver Total
 | Use of modern programming practices | 1.24 | 1.10 | 1.00 | 0.91 | 0.82 |
 | Use of software tools | 1.24 | 1.10 | 1.00 | 0.91 | 0.83 |
 | Required development schedule | 1.23 | 1.08 | 1.00 | 1.04 | 1.10 |
+
+</details>
